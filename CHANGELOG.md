@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 – unreleased
+- Templates now contain the `<main>` group directly, with sections as separate patterns inside. The Site Editor uses `<main>` as the section root, so patterns and blocks can be dropped into any template (before, `<main>` was hidden inside a template pattern and drops were ignored).
+- Removed the `template-front-page` pattern: the front page template lists Hero, Latest episodes and Latest news directly.
+
 ## 0.2.2 – unreleased
 - New call-to-action patterns: Special series banner, Series spotlight with episodes, All series, Special episode.
 

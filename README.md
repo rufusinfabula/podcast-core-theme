@@ -39,7 +39,7 @@ Insertable (category *Podcast*): Hero, Listen on (platform buttons), Latest epis
 - **Special episode** – one episode in the spotlight (latest of a series by default)
 
 On insertion, links and filters point to the series with most episodes; change them in the editor.
-Template content lives in hidden `template-*` patterns so that every string is translatable.
+Each template has its own `<main>` group (the Site Editor's section root, so new sections can be dropped in) and pulls translatable content from hidden `template-*` patterns.
 
 ## Child themes
 
