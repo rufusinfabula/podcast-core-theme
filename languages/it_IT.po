@@ -269,95 +269,106 @@ msgid "Tags:"
 msgstr "Tag:"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/elena.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Base"
 msgstr "Base"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/elena.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Surface"
 msgstr "Superficie"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Contrast"
 msgstr "Contrasto"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Muted"
 msgstr "Attenuato"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Primary"
 msgstr "Primario"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Secondary"
 msgstr "Secondario"
 
 #: theme.json
-#: styles/midnight.json
-#: styles/paper.json
-#: styles/studio.json
+#: styles/chiara.json
+#: styles/morgana.json
+#: styles/rosa.json
+#: styles/viola.json
 msgctxt "Color name"
 msgid "Accent"
 msgstr "Accento"
 
 #: theme.json
-#: styles/paper.json
 msgctxt "Font family name"
 msgid "Body"
 msgstr "Testo"
 
 #: theme.json
-#: styles/paper.json
 msgctxt "Font family name"
 msgid "Headings"
 msgstr "Titoli"
 
 #: theme.json
-#: styles/paper.json
+#: styles/elena.json
 msgctxt "Font family name"
 msgid "Monospace"
 msgstr "Monospazio"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Font size name"
 msgid "Small"
 msgstr "Piccolo"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Font size name"
 msgid "Medium"
 msgstr "Medio"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Font size name"
 msgid "Large"
 msgstr "Grande"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Font size name"
 msgid "Extra Large"
 msgstr "Molto grande"
@@ -373,11 +384,13 @@ msgid "2X-Small"
 msgstr "Minimo"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Space size name"
 msgid "X-Small"
 msgstr "Molto piccolo"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Space size name"
 msgid "Small"
 msgstr "Piccolo"
@@ -388,11 +401,13 @@ msgid "Medium"
 msgstr "Medio"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Space size name"
 msgid "Large"
 msgstr "Grande"
 
 #: theme.json
+#: styles/elena.json
 msgctxt "Space size name"
 msgid "X-Large"
 msgstr "Molto grande"
@@ -412,22 +427,122 @@ msgctxt "Custom template name"
 msgid "Page without title"
 msgstr "Pagina senza titolo"
 
-#: styles/midnight.json
+#: styles/chiara.json
 msgctxt "Style variation name"
-msgid "Midnight"
-msgstr "Mezzanotte"
+msgid "Chiara"
+msgstr "Chiara"
 
-#: styles/paper.json
+#: styles/elena.json
 msgctxt "Style variation name"
-msgid "Paper"
-msgstr "Carta"
+msgid "Elena"
+msgstr "Elena"
 
-#: styles/studio.json
-msgctxt "Style variation name"
-msgid "Studio"
-msgstr "Studio"
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Navy"
+msgstr "Blu petrolio"
 
-#: styles/lagoon.json
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Neutral"
+msgstr "Neutro"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Teal"
+msgstr "Verde acqua"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Light Teal"
+msgstr "Verde acqua chiaro"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Amber"
+msgstr "Ambra"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Brown"
+msgstr "Marrone"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Mauve"
+msgstr "Malva"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Magenta"
+msgstr "Magenta"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Pink"
+msgstr "Rosa"
+
+#: styles/elena.json
+msgctxt "Color name"
+msgid "Subtle Border"
+msgstr "Bordo tenue"
+
+#: styles/elena.json
+msgctxt "Font family name"
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: styles/elena.json
+msgctxt "Font family name"
+msgid "Literata"
+msgstr "Literata"
+
+#: styles/elena.json
+msgctxt "Font family name"
+msgid "Recursive"
+msgstr "Recursive"
+
+#: styles/elena.json
+msgctxt "Font family name"
+msgid "Body (Montserrat)"
+msgstr "Testo (Montserrat)"
+
+#: styles/elena.json
+msgctxt "Font family name"
+msgid "Headings (Montserrat)"
+msgstr "Titoli (Montserrat)"
+
+#: styles/elena.json
+msgctxt "Font size name"
+msgid "Extra Extra Large"
+msgstr "Enorme"
+
+#: styles/elena.json
+msgctxt "Space size name"
+msgid "Tiny"
+msgstr "Minuscolo"
+
+#: styles/elena.json
+msgctxt "Space size name"
+msgid "Regular"
+msgstr "Normale"
+
+#: styles/elena.json
+msgctxt "Space size name"
+msgid "XX-Large"
+msgstr "Enorme"
+
+#: styles/morgana.json
 msgctxt "Style variation name"
-msgid "Lagoon"
-msgstr "Laguna"
+msgid "Morgana"
+msgstr "Morgana"
+
+#: styles/rosa.json
+msgctxt "Style variation name"
+msgid "Rosa"
+msgstr "Rosa"
+
+#: styles/viola.json
+msgctxt "Style variation name"
+msgid "Viola"
+msgstr "Viola"

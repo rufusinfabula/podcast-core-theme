@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Rosa",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "base",
+          "name": "Base",
+          "color": "#FFFBFA"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FCEFF1"
+        },
+        {
+          "slug": "contrast",
+          "name": "Contrast",
+          "color": "#3E3350"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#736886"
+        },
+        {
+          "slug": "primary",
+          "name": "Primary",
+          "color": "#F2B5C4"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#D6EDE2"
+        },
+        {
+          "slug": "accent",
+          "name": "Accent",
+          "color": "#BCC8F2"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        },
+        "typography": {
+          "textDecoration": "underline"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|primary",
+          "text": "var:preset|color|contrast"
+        },
+        ":hover": {
+          "color": {
+            "background": "var:preset|color|accent",
+            "text": "var:preset|color|contrast"
+          }
+        }
+      }
+    },
+    "css": ".pct-hero{color:var(--wp--preset--color--contrast)}.pct-hero .wp-block-button__link{background:var(--wp--preset--color--base);color:var(--wp--preset--color--contrast)}.pct-episode-number{color:var(--wp--preset--color--contrast)}.pc-player{--pc-accent:var(--wp--preset--color--contrast)}"
+  }
+}

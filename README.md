@@ -11,7 +11,7 @@ A block (full site editing) theme for podcast websites. Designed to work with [P
 - Episode archive and series archives with episode number on each card
 - Search overlay in the header and search results **grouped by type** (episodes, news, pages)
 - Platform buttons and footer icons read from *Settings → Podcast* (Podcast Core Plugin)
-- No web fonts to download: system font stacks, fast and privacy friendly
+- System font stacks by default; the Elena variation uses bundled, self-hosted fonts (no external requests)
 - Translation ready; Italian included
 
 ## Style variations
@@ -21,12 +21,13 @@ Pick one in *Appearance → Editor → Styles*:
 | Variation | Look |
 |---|---|
 | Default | White, near-black text, indigo primary, coral accent |
-| Midnight | Dark background, lavender primary, warm yellow accent |
-| Paper | Warm cream, serif type, brick red and green |
-| Studio | Black and white, yellow surfaces, uppercase headings |
-| Lagoon | Deep teal and petrol blue on warm off-white, amber accent |
+| **Elena** | Petrol blue and teal on warm off-white, amber/brown/mauve/magenta accents; Montserrat + Literata; dark sticky episode player |
+| **Chiara** (light) | White and soft grey, clear blue, warm amber accent |
+| **Morgana** (dark) | Near-black, lavender primary, soft pink accent |
+| **Viola** (vivid) | Electric violet, bright yellow, hot pink |
+| **Rosa** (pastel) | Blush pink, mint, periwinkle on cream; dark text on pastel buttons |
 
-Every variation uses the same color slugs (`base`, `surface`, `contrast`, `muted`, `primary`, `secondary`, `accent`) and font slugs (`body`, `heading`, `mono`), so content keeps working when you switch.
+Every variation uses the same 7 color slugs (`base`, `surface`, `contrast`, `muted`, `primary`, `secondary`, `accent`) and font slugs (`body`, `heading`, `mono`), so content keeps working when you switch. Elena adds extra accent colors (`accent-amber`, `accent-brown`, `accent-mauve`, `accent-magenta`, `accent-pink`, `neutral`) and the font families `montserrat`, `literata`, `recursive`.
 
 ## Patterns
 

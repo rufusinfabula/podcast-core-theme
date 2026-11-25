@@ -14,7 +14,7 @@ A block theme for podcast websites.
 Podcast Core Theme is a block (full site editing) theme for podcasts: home page with latest episodes, episode pages with audio player, series archives and grouped search results.
 Designed to work with Podcast Core Plugin.
 
-Includes four style variations (Midnight, Paper, Studio, Lagoon) and uses system fonts only.
+Includes five style variations: Elena, Chiara (light), Morgana (dark), Viola (vivid) and Rosa (pastel).
 
 This theme is in early development.
 
@@ -24,7 +24,7 @@ This theme is in early development.
 * Templates: front page, blog, archive, episode, episode archive, series, search, 404, page.
 * Hero with crossfade slideshow, latest episodes, latest news, newsletter and platform links patterns.
 * Search overlay and grouped search results.
-* Style variations: Midnight, Paper, Studio, Lagoon.
+* Style variations: Elena, Chiara, Morgana, Viola, Rosa.
 * Italian translation.
 
 = 0.1.0 =
@@ -34,3 +34,24 @@ This theme is in early development.
 
 Podcast Core Theme, (C) 2026 Rufusinfabula.
 Podcast Core Theme is distributed under the terms of the GNU GPL v2 or later.
+
+This theme bundles the following third-party resources:
+
+Montserrat Font
+Copyright 2011 The Montserrat Project Authors
+License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
+Source: https://github.com/JulietaUla/Montserrat
+
+Literata Font
+Copyright 2017 The Literata Project Authors
+License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
+Source: https://github.com/googlefonts/literata
+
+Recursive Font
+Copyright 2019 The Recursive Project Authors
+License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
+Source: https://github.com/arrowtype/recursive
+
+hero.svg placeholder image
+Copyright 2026 Rufusinfabula
+License: GPLv2 or later

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Viola",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "base",
+          "name": "Base",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FFF0F7"
+        },
+        {
+          "slug": "contrast",
+          "name": "Contrast",
+          "color": "#1A0B2E"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#5B4B73"
+        },
+        {
+          "slug": "primary",
+          "name": "Primary",
+          "color": "#7B2FF7"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#FFE45E"
+        },
+        {
+          "slug": "accent",
+          "name": "Accent",
+          "color": "#FF2D87"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontWeight": "900",
+          "letterSpacing": "-0.02em"
+        }
+      },
+      "button": {
+        ":hover": {
+          "color": {
+            "background": "var:preset|color|accent",
+            "text": "var:preset|color|base"
+          }
+        }
+      }
+    },
+    "css": ".pct-hero .wp-block-button__link{background:var(--wp--preset--color--secondary);color:var(--wp--preset--color--contrast)}.pct-hero .wp-block-button__link:hover{background:var(--wp--preset--color--accent);color:var(--wp--preset--color--base)}"
+  }
+}
