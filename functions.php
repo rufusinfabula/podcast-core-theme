@@ -88,3 +88,25 @@ function podcast_core_theme_platform_links(): array {
 	}
 	return $links;
 }
+
+/**
+ * Series used to pre-fill the call-to-action patterns: the one with most episodes.
+ * Editors change the link, the filter and the texts after inserting the pattern.
+ *
+ * @return WP_Term|null
+ */
+function podcast_core_theme_featured_series() {
+	if ( ! taxonomy_exists( 'podcast_series' ) ) {
+		return null;
+	}
+	$terms = get_terms(
+		array(
+			'taxonomy'   => 'podcast_series',
+			'hide_empty' => false,
+			'orderby'    => 'count',
+			'order'      => 'DESC',
+			'number'     => 1,
+		)
+	);
+	return ( ! is_wp_error( $terms ) && $terms ) ? $terms[0] : null;
+}

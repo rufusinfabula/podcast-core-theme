@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Podcast Core Theme 0.2.0\n"
+"Project-Id-Version: Podcast Core Theme 0.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-25T21:39:45+00:00\n"
+"POT-Creation-Date: 2026-11-25T21:55:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-theme\n"
@@ -36,6 +36,107 @@ msgstr ""
 
 #: functions.php:52
 msgid "Podcast"
+msgstr ""
+
+#: patterns/cta-episode-highlight.php
+msgctxt "Pattern title"
+msgid "Special episode"
+msgstr ""
+
+#: patterns/cta-episode-highlight.php
+msgctxt "Pattern description"
+msgid "One episode in the spotlight with cover, title, excerpt and a listen button. By default the latest episode of a series; change the filter to pick another one."
+msgstr ""
+
+#: patterns/cta-episode-highlight.php:45
+msgid "Special episode"
+msgstr ""
+
+#: patterns/cta-episode-highlight.php:50
+msgid "Listen now →"
+msgstr ""
+
+#: patterns/cta-series-banner.php
+msgctxt "Pattern title"
+msgid "Special series banner"
+msgstr ""
+
+#: patterns/cta-series-banner.php
+msgctxt "Pattern description"
+msgid "Full-width banner promoting a special series, with a button to its archive."
+msgstr ""
+
+#: patterns/cta-series-banner.php:14
+#: patterns/cta-series-episodes.php:17
+msgid "Series name"
+msgstr ""
+
+#: patterns/cta-series-banner.php:23
+msgid "Special series"
+msgstr ""
+
+#: patterns/cta-series-banner.php:31
+msgid "A short series that goes deeper into one theme, episode after episode. Tell listeners why it is worth their time."
+msgstr ""
+
+#: patterns/cta-series-banner.php:37
+msgid "Listen to the series"
+msgstr ""
+
+#: patterns/cta-series-episodes.php
+msgctxt "Pattern title"
+msgid "Series spotlight with episodes"
+msgstr ""
+
+#: patterns/cta-series-episodes.php
+msgctxt "Pattern description"
+msgid "Introduces a series and lists its latest episodes, with a button to the series archive."
+msgstr ""
+
+#: patterns/cta-series-episodes.php:38
+msgid "Series"
+msgstr ""
+
+#: patterns/cta-series-episodes.php:46
+msgid "Describe the series in one or two sentences: who you talk to and what listeners will discover."
+msgstr ""
+
+#: patterns/cta-series-episodes.php:52
+msgid "All episodes of the series"
+msgstr ""
+
+#: patterns/cta-series-episodes.php:77
+msgid "No episodes in this series yet."
+msgstr ""
+
+#: patterns/cta-series-grid.php
+msgctxt "Pattern title"
+msgid "All series"
+msgstr ""
+
+#: patterns/cta-series-grid.php
+msgctxt "Pattern description"
+msgid "One card per series with description, number of episodes and a link to its archive. Cards are created from the series that exist when the pattern is inserted."
+msgstr ""
+
+#: patterns/cta-series-grid.php:30
+msgid "Our series"
+msgstr ""
+
+#: patterns/cta-series-grid.php:43
+msgid "Add a short description of this series."
+msgstr ""
+
+#. translators: %s: number of episodes
+#: patterns/cta-series-grid.php:50
+#, php-format
+msgid "%s episode"
+msgid_plural "%s episodes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: patterns/cta-series-grid.php:58
+msgid "Listen"
 msgstr ""
 
 #: patterns/footer-credit.php

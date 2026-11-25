@@ -31,7 +31,14 @@ Every variation uses the same 7 color slugs (`base`, `surface`, `contrast`, `mut
 
 ## Patterns
 
-Insertable (category *Podcast*): Hero, Listen on (platform buttons), Latest episodes, Latest news, Newsletter call to action.
+Insertable (category *Podcast*): Hero, Listen on (platform buttons), Latest episodes, Latest news, Newsletter call to action, and series/episode calls to action:
+
+- **Special series banner** – full-width banner with a button to a series archive
+- **Series spotlight with episodes** – series intro plus its latest episodes (Query Loop filtered by series)
+- **All series** – one card per series with description, episode count and archive link
+- **Special episode** – one episode in the spotlight (latest of a series by default)
+
+On insertion, links and filters point to the series with most episodes; change them in the editor.
 Template content lives in hidden `template-*` patterns so that every string is translatable.
 
 ## Child themes

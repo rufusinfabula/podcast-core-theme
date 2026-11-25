@@ -6,7 +6,7 @@ Description: A block theme for podcast websites. Designed to work with Podcast C
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.1
-Version: 0.2.1
+Version: 0.2.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: podcast-core-theme
@@ -362,6 +362,52 @@ Tags: blog, full-site-editing, block-patterns, wide-blocks, custom-colors, trans
 	.pc-player .pc-player__title {
 		font-size: 12px;
 	}
+}
+
+/* ==========================================================================
+   Call-to-action patterns
+   ========================================================================== */
+.pct-cta {
+	padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--50);
+}
+.pct-cta--spotlight,
+.pct-series-card {
+	border-radius: 12px;
+}
+.pct-cta--episode {
+	padding-inline: 0;
+}
+.pct-eyebrow {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--accent);
+}
+.pct-cta--spotlight .pct-eyebrow,
+.pct-cta--episode .pct-eyebrow {
+	color: var(--wp--preset--color--primary);
+}
+.pct-cta__image img {
+	border-radius: 12px;
+}
+.pct-cta__more {
+	display: inline-block;
+	margin-top: 0.5rem;
+	font-weight: 700;
+}
+.pct-series-card {
+	height: 100%;
+	padding: var(--wp--preset--spacing--40);
+}
+.pct-series-card .wp-block-buttons {
+	margin-top: auto;
+}
+.pct-series-card__count {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--muted);
 }
 
 /* ==========================================================================

@@ -20,10 +20,12 @@ msgstr ""
 msgid "Podcast Core Theme"
 msgstr ""
 
+
 #. Theme URI of the theme
 #: style.css
 msgid "https://github.com/rufusinfabula/podcast-core-theme"
 msgstr ""
+
 
 #. Description of the theme
 #: style.css
@@ -35,9 +37,111 @@ msgstr "Un tema a blocchi per siti di podcast. Pensato per Podcast Core Plugin: 
 msgid "Rufusinfabula"
 msgstr ""
 
+
 #: functions.php:52
 msgid "Podcast"
 msgstr "Podcast"
+
+#: patterns/cta-episode-highlight.php
+msgctxt "Pattern title"
+msgid "Special episode"
+msgstr "Puntata speciale"
+
+#: patterns/cta-episode-highlight.php
+msgctxt "Pattern description"
+msgid "One episode in the spotlight with cover, title, excerpt and a listen button. By default the latest episode of a series; change the filter to pick another one."
+msgstr "Un episodio in evidenza con copertina, titolo, estratto e pulsante di ascolto. Di default l'ultimo episodio di una serie: cambia il filtro per sceglierne un altro."
+
+#: patterns/cta-episode-highlight.php:45
+msgid "Special episode"
+msgstr "Puntata speciale"
+
+#: patterns/cta-episode-highlight.php:50
+msgid "Listen now →"
+msgstr "Ascolta ora →"
+
+#: patterns/cta-series-banner.php
+msgctxt "Pattern title"
+msgid "Special series banner"
+msgstr "Banner serie speciale"
+
+#: patterns/cta-series-banner.php
+msgctxt "Pattern description"
+msgid "Full-width banner promoting a special series, with a button to its archive."
+msgstr "Banner a tutta larghezza per promuovere una serie speciale, con pulsante verso il suo archivio."
+
+#: patterns/cta-series-banner.php:14
+#: patterns/cta-series-episodes.php:17
+msgid "Series name"
+msgstr "Nome della serie"
+
+#: patterns/cta-series-banner.php:23
+msgid "Special series"
+msgstr "Serie speciale"
+
+#: patterns/cta-series-banner.php:31
+msgid "A short series that goes deeper into one theme, episode after episode. Tell listeners why it is worth their time."
+msgstr "Una serie breve che approfondisce un tema, episodio dopo episodio. Racconta perché vale la pena ascoltarla."
+
+#: patterns/cta-series-banner.php:37
+msgid "Listen to the series"
+msgstr "Ascolta la serie"
+
+#: patterns/cta-series-episodes.php
+msgctxt "Pattern title"
+msgid "Series spotlight with episodes"
+msgstr "Serie in evidenza con episodi"
+
+#: patterns/cta-series-episodes.php
+msgctxt "Pattern description"
+msgid "Introduces a series and lists its latest episodes, with a button to the series archive."
+msgstr "Presenta una serie e ne elenca gli ultimi episodi, con un pulsante verso l'archivio della serie."
+
+#: patterns/cta-series-episodes.php:38
+msgid "Series"
+msgstr "Serie"
+
+#: patterns/cta-series-episodes.php:46
+msgid "Describe the series in one or two sentences: who you talk to and what listeners will discover."
+msgstr "Descrivi la serie in una o due frasi: con chi parli e cosa scoprirà chi ascolta."
+
+#: patterns/cta-series-episodes.php:52
+msgid "All episodes of the series"
+msgstr "Tutti gli episodi della serie"
+
+#: patterns/cta-series-episodes.php:77
+msgid "No episodes in this series yet."
+msgstr "Ancora nessun episodio in questa serie."
+
+#: patterns/cta-series-grid.php
+msgctxt "Pattern title"
+msgid "All series"
+msgstr "Tutte le serie"
+
+#: patterns/cta-series-grid.php
+msgctxt "Pattern description"
+msgid "One card per series with description, number of episodes and a link to its archive. Cards are created from the series that exist when the pattern is inserted."
+msgstr "Una scheda per serie con descrizione, numero di episodi e link all'archivio. Le schede vengono create dalle serie esistenti al momento dell'inserimento."
+
+#: patterns/cta-series-grid.php:30
+msgid "Our series"
+msgstr "Le nostre serie"
+
+#: patterns/cta-series-grid.php:43
+msgid "Add a short description of this series."
+msgstr "Aggiungi una breve descrizione di questa serie."
+
+#. translators: %s: number of episodes
+#: patterns/cta-series-grid.php:50
+#, php-format
+msgid "%s episode"
+msgid_plural "%s episodes"
+msgstr[0] "%s episodio"
+msgstr[1] "%s episodi"
+
+#: patterns/cta-series-grid.php:58
+msgid "Listen"
+msgstr "Ascolta"
 
 #: patterns/footer-credit.php
 msgctxt "Pattern title"

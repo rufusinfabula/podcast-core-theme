@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2 – unreleased
+- New call-to-action patterns: Special series banner, Series spotlight with episodes, All series, Special episode.
+
 ## 0.2.1 – unreleased
 - Sticky bar Episode Player is now the theme's default player design (all variations), defined in `style.css`.
 - Variations no longer use custom CSS (`styles.css`): the Site Editor concatenated it when switching variations. Per-variation tweaks use `settings.custom` (`hero.*`, `episodeNumber`, `player.accent`, `player.icon`).
