@@ -41,6 +41,15 @@
           "color": "#BCC8F2"
         }
       ]
+    },
+    "custom": {
+      "hero": {
+        "text": "var(--wp--preset--color--contrast)",
+        "buttonBackground": "var(--wp--preset--color--base)",
+        "buttonText": "var(--wp--preset--color--contrast)",
+        "buttonHoverText": "var(--wp--preset--color--contrast)"
+      },
+      "episodeNumber": "var(--wp--preset--color--contrast)"
     }
   },
   "styles": {
@@ -65,7 +74,6 @@
           }
         }
       }
-    },
-    "css": ".pct-hero{color:var(--wp--preset--color--contrast)}.pct-hero .wp-block-button__link{background:var(--wp--preset--color--base);color:var(--wp--preset--color--contrast)}.pct-episode-number{color:var(--wp--preset--color--contrast)}.pc-player{--pc-accent:var(--wp--preset--color--contrast)}"
+    }
   }
 }

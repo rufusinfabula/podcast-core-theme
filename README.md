@@ -41,6 +41,8 @@ Override any template, part or pattern in a child theme (`Template: podcast-core
 - CSS classes: `.pct-hero`, `.pct-hero__media` (add `data-interval` in ms to change the slideshow speed), `.pct-card`, `.pct-episode-number`, `.pct-search-*`, `.pct-footer`
 - Episode Player: custom properties on `.pc-player` (see the plugin README)
 - Filter `podcast_core_theme_search_groups` to change the grouped search sections
+- Per-variation tweaks without custom CSS: `settings.custom` keys `hero.background`, `hero.text`, `hero.buttonBackground`, `hero.buttonText`, `hero.buttonHoverBackground`, `hero.buttonHoverText`, `episodeNumber`, `player.accent`, `player.icon`
+- Avoid `styles.css` in style variations: the Site Editor appends it to the user's styles each time a variation is picked
 
 ## Requirements
 

@@ -41,6 +41,14 @@
           "color": "#FF2D87"
         }
       ]
+    },
+    "custom": {
+      "hero": {
+        "buttonBackground": "var(--wp--preset--color--secondary)",
+        "buttonText": "var(--wp--preset--color--contrast)",
+        "buttonHoverBackground": "var(--wp--preset--color--accent)",
+        "buttonHoverText": "var(--wp--preset--color--base)"
+      }
     }
   },
   "styles": {
@@ -59,7 +67,6 @@
           }
         }
       }
-    },
-    "css": ".pct-hero .wp-block-button__link{background:var(--wp--preset--color--secondary);color:var(--wp--preset--color--contrast)}.pct-hero .wp-block-button__link:hover{background:var(--wp--preset--color--accent);color:var(--wp--preset--color--base)}"
+    }
   }
 }
