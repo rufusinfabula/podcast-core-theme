@@ -14,7 +14,7 @@ A block theme for podcast websites.
 Podcast Core Theme is a block (full site editing) theme for podcasts: home page with latest episodes, episode pages with audio player, series archives and grouped search results.
 Designed to work with Podcast Core Plugin.
 
-Includes three style variations (Midnight, Paper, Studio) and uses system fonts only.
+Includes four style variations (Midnight, Paper, Studio, Lagoon) and uses system fonts only.
 
 This theme is in early development.
 
@@ -24,7 +24,7 @@ This theme is in early development.
 * Templates: front page, blog, archive, episode, episode archive, series, search, 404, page.
 * Hero with crossfade slideshow, latest episodes, latest news, newsletter and platform links patterns.
 * Search overlay and grouped search results.
-* Style variations: Midnight, Paper, Studio.
+* Style variations: Midnight, Paper, Studio, Lagoon.
 * Italian translation.
 
 = 0.1.0 =

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-25T19:34:05+00:00\n"
+"POT-Creation-Date: 2026-11-25T20:00:21+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-theme\n"
@@ -268,6 +268,7 @@ msgid "Tags:"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -276,6 +277,7 @@ msgid "Base"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -284,6 +286,7 @@ msgid "Surface"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -292,6 +295,7 @@ msgid "Contrast"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -300,6 +304,7 @@ msgid "Muted"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -308,6 +313,7 @@ msgid "Primary"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -316,6 +322,7 @@ msgid "Secondary"
 msgstr ""
 
 #: theme.json
+#: styles/lagoon.json
 #: styles/midnight.json
 #: styles/paper.json
 #: styles/studio.json
@@ -409,6 +416,11 @@ msgstr ""
 #: theme.json
 msgctxt "Custom template name"
 msgid "Page without title"
+msgstr ""
+
+#: styles/lagoon.json
+msgctxt "Style variation name"
+msgid "Lagoon"
 msgstr ""
 
 #: styles/midnight.json

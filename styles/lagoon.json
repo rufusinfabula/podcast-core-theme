@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Lagoon",
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "base", "name": "Base", "color": "#FFFFFF" },
+        { "slug": "surface", "name": "Surface", "color": "#FBFAF3" },
+        { "slug": "contrast", "name": "Contrast", "color": "#005264" },
+        { "slug": "muted", "name": "Muted", "color": "#686868" },
+        { "slug": "primary", "name": "Primary", "color": "#008497" },
+        { "slug": "secondary", "name": "Secondary", "color": "#57B9CD" },
+        { "slug": "accent", "name": "Accent", "color": "#FFBD59" }
+      ]
+    }
+  },
+  "styles": {
+    "color": { "background": "var:preset|color|surface" },
+    "elements": {
+      "button": {
+        ":hover": { "color": { "background": "var:preset|color|accent", "text": "var:preset|color|contrast" } }
+      }
+    }
+  }
+}

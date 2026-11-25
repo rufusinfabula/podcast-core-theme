@@ -426,3 +426,8 @@ msgstr "Carta"
 msgctxt "Style variation name"
 msgid "Studio"
 msgstr "Studio"
+
+#: styles/lagoon.json
+msgctxt "Style variation name"
+msgid "Lagoon"
+msgstr "Laguna"

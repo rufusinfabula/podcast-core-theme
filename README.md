@@ -24,6 +24,7 @@ Pick one in *Appearance → Editor → Styles*:
 | Midnight | Dark background, lavender primary, warm yellow accent |
 | Paper | Warm cream, serif type, brick red and green |
 | Studio | Black and white, yellow surfaces, uppercase headings |
+| Lagoon | Deep teal and petrol blue on warm off-white, amber accent |
 
 Every variation uses the same color slugs (`base`, `surface`, `contrast`, `muted`, `primary`, `secondary`, `accent`) and font slugs (`body`, `heading`, `mono`), so content keeps working when you switch.
 

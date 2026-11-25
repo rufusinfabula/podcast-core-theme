@@ -5,7 +5,7 @@
 - Patterns: hero (crossfade slideshow), platform links, latest episodes, latest news, newsletter CTA; hidden template patterns for translatable content.
 - Header with site logo, navigation and search overlay; footer with platform icons and credit.
 - Grouped search results (episodes, news, pages), filterable.
-- Style variations: Midnight, Paper, Studio.
+- Style variations: Midnight, Paper, Studio, Lagoon.
 - System font stacks only (no bundled fonts).
 - Italian translation.
 
