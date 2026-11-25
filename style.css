@@ -6,7 +6,7 @@ Description: A block theme for podcast websites. Designed to work with Podcast C
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.1
-Version: 0.2.4
+Version: 0.2.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: podcast-core-theme
@@ -227,7 +227,14 @@ Tags: blog, full-site-editing, block-patterns, wide-blocks, custom-colors, trans
 .pct-hero {
 	background: var(--wp--custom--hero--background, var(--wp--preset--color--primary));
 	color: var(--wp--custom--hero--text, var(--wp--preset--color--base));
-	padding-block: var(--wp--preset--spacing--60);
+}
+/* Default vertical padding when the block has none set (older saved templates).
+   The Hero pattern sets it on the block, so it can be changed in Styles → Dimensions. */
+.pct-hero:not([style*="padding-top"]) {
+	padding-top: var(--wp--preset--spacing--40);
+}
+.pct-hero:not([style*="padding-bottom"]) {
+	padding-bottom: var(--wp--preset--spacing--40);
 }
 .pct-hero .wp-block-heading {
 	color: inherit;

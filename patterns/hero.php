@@ -10,8 +10,8 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","className":"pct-hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull pct-hero">
+<!-- wp:group {"align":"full","className":"pct-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull pct-hero" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
 	<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 	<div class="wp-block-columns alignwide are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
