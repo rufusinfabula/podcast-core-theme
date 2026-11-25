@@ -1,0 +1,428 @@
+# Copyright (C) 2026 Rufusinfabula
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Podcast Core Theme 0.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-25T19:34:05+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: podcast-core-theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Podcast Core Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/rufusinfabula/podcast-core-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A block theme for podcast websites. Designed to work with Podcast Core Plugin: episode pages, audio player, series archives and grouped search."
+msgstr "Un tema a blocchi per siti di podcast. Pensato per Podcast Core Plugin: pagine degli episodi, player audio, archivi delle serie e ricerca raggruppata."
+
+#. Author of the theme
+#: style.css
+msgid "Rufusinfabula"
+msgstr ""
+
+#: functions.php:52
+msgid "Podcast"
+msgstr "Podcast"
+
+#: patterns/footer-credit.php
+msgctxt "Pattern title"
+msgid "Footer credit"
+msgstr "Crediti del footer"
+
+#: patterns/footer-platforms.php
+msgctxt "Pattern title"
+msgid "Footer platform icons"
+msgstr "Icone piattaforme nel footer"
+
+#: patterns/hero.php
+msgctxt "Pattern title"
+msgid "Hero"
+msgstr "Hero"
+
+#: patterns/hero.php
+msgctxt "Pattern description"
+msgid "Show title, tagline, platform buttons and one or more images. Add several images to get a crossfade slideshow."
+msgstr "Titolo, slogan, pulsanti delle piattaforme e una o più immagini. Con più immagini si ottiene una dissolvenza a rotazione."
+
+#: patterns/hero.php:20
+msgid "Stories worth listening to"
+msgstr "Storie che vale la pena ascoltare"
+
+#: patterns/hero.php:24
+msgid "A new episode every week."
+msgstr "Un nuovo episodio ogni settimana."
+
+#: patterns/latest-episodes.php
+msgctxt "Pattern title"
+msgid "Latest episodes"
+msgstr "Ultimi episodi"
+
+#: patterns/latest-episodes.php
+msgctxt "Pattern description"
+msgid "The three most recent episodes with a link to the archive."
+msgstr "I tre episodi più recenti con il link all'archivio."
+
+#: patterns/latest-episodes.php:21
+msgid "Latest episodes"
+msgstr "Ultimi episodi"
+
+#: patterns/latest-episodes.php:25
+msgid "All episodes →"
+msgstr "Tutti gli episodi →"
+
+#: patterns/latest-episodes.php:47
+msgid "No episodes published yet."
+msgstr "Nessun episodio pubblicato per ora."
+
+#: patterns/latest-posts.php
+msgctxt "Pattern title"
+msgid "Latest news"
+msgstr "Ultime news"
+
+#: patterns/latest-posts.php
+msgctxt "Pattern description"
+msgid "The three most recent blog posts."
+msgstr "I tre articoli più recenti."
+
+#: patterns/latest-posts.php:16
+msgid "Latest news"
+msgstr "Ultime news"
+
+#: patterns/latest-posts.php:33
+msgid "No news published yet."
+msgstr "Nessuna news pubblicata per ora."
+
+#: patterns/newsletter.php
+msgctxt "Pattern title"
+msgid "Newsletter call to action"
+msgstr "Invito alla newsletter"
+
+#: patterns/newsletter.php
+msgctxt "Pattern description"
+msgid "A banner inviting visitors to subscribe to the newsletter."
+msgstr "Un riquadro che invita a iscriversi alla newsletter."
+
+#: patterns/newsletter.php:18
+msgid "Get new episodes in your inbox"
+msgstr "I nuovi episodi nella tua casella di posta"
+
+#: patterns/newsletter.php:22
+msgid "Subscribe to the newsletter: episodes, behind the scenes and stories."
+msgstr "Iscriviti alla newsletter: episodi, retroscena e storie."
+
+#: patterns/newsletter.php:30
+msgid "Subscribe"
+msgstr "Iscriviti"
+
+#: patterns/platform-links.php
+msgctxt "Pattern title"
+msgid "Listen on"
+msgstr "Ascolta su"
+
+#: patterns/platform-links.php
+msgctxt "Pattern description"
+msgid "Buttons to the platforms set in Settings → Podcast (Podcast Core Plugin)."
+msgstr "Pulsanti verso le piattaforme impostate in Impostazioni → Podcast (Podcast Core Plugin)."
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Previous / next links"
+msgstr "Link precedente / successivo"
+
+#: patterns/search-overlay.php
+msgctxt "Pattern title"
+msgid "Search overlay"
+msgstr "Finestra di ricerca"
+
+#: patterns/search-overlay.php:12
+#: patterns/search-overlay.php:18
+#: patterns/search-toggle.php:12
+#: patterns/template-404.php:19
+msgid "Search"
+msgstr "Cerca"
+
+#: patterns/search-overlay.php:14
+msgid "Close search"
+msgstr "Chiudi ricerca"
+
+#: patterns/search-overlay.php:16
+msgid "Search for:"
+msgstr "Cerca:"
+
+#: patterns/search-overlay.php:17
+msgid "Search episodes, news, pages…"
+msgstr "Cerca episodi, news, pagine…"
+
+#: patterns/search-results.php
+msgctxt "Pattern title"
+msgid "Search results grouped by type"
+msgstr "Risultati di ricerca raggruppati per tipo"
+
+#: patterns/search-results.php:21
+#: patterns/template-home.php:15
+msgid "News"
+msgstr "News"
+
+#: patterns/search-results.php:25
+msgid "Pages"
+msgstr "Pagine"
+
+#: patterns/search-results.php:66
+msgid "See all"
+msgstr "Vedi tutti"
+
+#: patterns/search-results.php:78
+msgid "Type something to search."
+msgstr "Scrivi qualcosa da cercare."
+
+#. translators: %s: search term
+#: patterns/search-results.php:80
+#, php-format
+msgid "No results for “%s”."
+msgstr "Nessun risultato per «%s»."
+
+#: patterns/search-toggle.php
+msgctxt "Pattern title"
+msgid "Search button"
+msgstr "Pulsante di ricerca"
+
+#: patterns/template-404.php
+msgctxt "Pattern title"
+msgid "Page not found content"
+msgstr "Contenuto pagina non trovata"
+
+#: patterns/template-404.php:14
+msgid "Page not found"
+msgstr "Pagina non trovata"
+
+#: patterns/template-404.php:17
+msgid "The page you are looking for does not exist or has moved. Try a search:"
+msgstr "La pagina che cerchi non esiste o è stata spostata. Prova a cercare:"
+
+#: patterns/template-archive-episodes.php
+msgctxt "Pattern title"
+msgid "Episode archive content"
+msgstr "Contenuto archivio episodi"
+
+#: patterns/template-archive-episodes.php:39
+#: patterns/template-archive.php:36
+#: patterns/template-home.php:38
+msgid "Nothing found here yet."
+msgstr "Ancora nessun contenuto qui."
+
+#: patterns/template-archive.php
+msgctxt "Pattern title"
+msgid "Archive content"
+msgstr "Contenuto archivio"
+
+#: patterns/template-front-page.php
+msgctxt "Pattern title"
+msgid "Front page content"
+msgstr "Contenuto home page"
+
+#: patterns/template-home.php
+msgctxt "Pattern title"
+msgid "Blog content"
+msgstr "Contenuto blog"
+
+#: patterns/template-page.php
+msgctxt "Pattern title"
+msgid "Page content"
+msgstr "Contenuto pagina"
+
+#: patterns/template-search.php
+msgctxt "Pattern title"
+msgid "Search results content"
+msgstr "Contenuto risultati di ricerca"
+
+#: patterns/template-single-episode.php
+msgctxt "Pattern title"
+msgid "Episode content"
+msgstr "Contenuto episodio"
+
+#: patterns/template-single-episode.php:13
+msgid "Series:"
+msgstr "Serie:"
+
+#: patterns/template-single.php
+msgctxt "Pattern title"
+msgid "Post content"
+msgstr "Contenuto articolo"
+
+#: patterns/template-single.php:22
+msgid "Tags:"
+msgstr "Tag:"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "Base"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr "Superficie"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "Contrasto"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Muted"
+msgstr "Attenuato"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "Primario"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "Secondario"
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr "Accento"
+
+#: theme.json
+#: styles/paper.json
+msgctxt "Font family name"
+msgid "Body"
+msgstr "Testo"
+
+#: theme.json
+#: styles/paper.json
+msgctxt "Font family name"
+msgid "Headings"
+msgstr "Titoli"
+
+#: theme.json
+#: styles/paper.json
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr "Monospazio"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Piccolo"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Medio"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "Molto grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr "Enorme"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Small"
+msgstr "Minimo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr "Molto piccolo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "Piccolo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "Medio"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Large"
+msgstr "Molto grande"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Header"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Footer"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without title"
+msgstr "Pagina senza titolo"
+
+#: styles/midnight.json
+msgctxt "Style variation name"
+msgid "Midnight"
+msgstr "Mezzanotte"
+
+#: styles/paper.json
+msgctxt "Style variation name"
+msgid "Paper"
+msgstr "Carta"
+
+#: styles/studio.json
+msgctxt "Style variation name"
+msgid "Studio"
+msgstr "Studio"

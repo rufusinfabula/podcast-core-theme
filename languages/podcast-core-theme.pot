@@ -1,0 +1,427 @@
+# Copyright (C) 2026 Rufusinfabula
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Podcast Core Theme 0.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-25T19:34:05+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: podcast-core-theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Podcast Core Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/rufusinfabula/podcast-core-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A block theme for podcast websites. Designed to work with Podcast Core Plugin: episode pages, audio player, series archives and grouped search."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Rufusinfabula"
+msgstr ""
+
+#: functions.php:52
+msgid "Podcast"
+msgstr ""
+
+#: patterns/footer-credit.php
+msgctxt "Pattern title"
+msgid "Footer credit"
+msgstr ""
+
+#: patterns/footer-platforms.php
+msgctxt "Pattern title"
+msgid "Footer platform icons"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern title"
+msgid "Hero"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern description"
+msgid "Show title, tagline, platform buttons and one or more images. Add several images to get a crossfade slideshow."
+msgstr ""
+
+#: patterns/hero.php:20
+msgid "Stories worth listening to"
+msgstr ""
+
+#: patterns/hero.php:24
+msgid "A new episode every week."
+msgstr ""
+
+#: patterns/latest-episodes.php
+msgctxt "Pattern title"
+msgid "Latest episodes"
+msgstr ""
+
+#: patterns/latest-episodes.php
+msgctxt "Pattern description"
+msgid "The three most recent episodes with a link to the archive."
+msgstr ""
+
+#: patterns/latest-episodes.php:21
+msgid "Latest episodes"
+msgstr ""
+
+#: patterns/latest-episodes.php:25
+msgid "All episodes →"
+msgstr ""
+
+#: patterns/latest-episodes.php:47
+msgid "No episodes published yet."
+msgstr ""
+
+#: patterns/latest-posts.php
+msgctxt "Pattern title"
+msgid "Latest news"
+msgstr ""
+
+#: patterns/latest-posts.php
+msgctxt "Pattern description"
+msgid "The three most recent blog posts."
+msgstr ""
+
+#: patterns/latest-posts.php:16
+msgid "Latest news"
+msgstr ""
+
+#: patterns/latest-posts.php:33
+msgid "No news published yet."
+msgstr ""
+
+#: patterns/newsletter.php
+msgctxt "Pattern title"
+msgid "Newsletter call to action"
+msgstr ""
+
+#: patterns/newsletter.php
+msgctxt "Pattern description"
+msgid "A banner inviting visitors to subscribe to the newsletter."
+msgstr ""
+
+#: patterns/newsletter.php:18
+msgid "Get new episodes in your inbox"
+msgstr ""
+
+#: patterns/newsletter.php:22
+msgid "Subscribe to the newsletter: episodes, behind the scenes and stories."
+msgstr ""
+
+#: patterns/newsletter.php:30
+msgid "Subscribe"
+msgstr ""
+
+#: patterns/platform-links.php
+msgctxt "Pattern title"
+msgid "Listen on"
+msgstr ""
+
+#: patterns/platform-links.php
+msgctxt "Pattern description"
+msgid "Buttons to the platforms set in Settings → Podcast (Podcast Core Plugin)."
+msgstr ""
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Previous / next links"
+msgstr ""
+
+#: patterns/search-overlay.php
+msgctxt "Pattern title"
+msgid "Search overlay"
+msgstr ""
+
+#: patterns/search-overlay.php:12
+#: patterns/search-overlay.php:18
+#: patterns/search-toggle.php:12
+#: patterns/template-404.php:19
+msgid "Search"
+msgstr ""
+
+#: patterns/search-overlay.php:14
+msgid "Close search"
+msgstr ""
+
+#: patterns/search-overlay.php:16
+msgid "Search for:"
+msgstr ""
+
+#: patterns/search-overlay.php:17
+msgid "Search episodes, news, pages…"
+msgstr ""
+
+#: patterns/search-results.php
+msgctxt "Pattern title"
+msgid "Search results grouped by type"
+msgstr ""
+
+#: patterns/search-results.php:21
+#: patterns/template-home.php:15
+msgid "News"
+msgstr ""
+
+#: patterns/search-results.php:25
+msgid "Pages"
+msgstr ""
+
+#: patterns/search-results.php:66
+msgid "See all"
+msgstr ""
+
+#: patterns/search-results.php:78
+msgid "Type something to search."
+msgstr ""
+
+#. translators: %s: search term
+#: patterns/search-results.php:80
+#, php-format
+msgid "No results for “%s”."
+msgstr ""
+
+#: patterns/search-toggle.php
+msgctxt "Pattern title"
+msgid "Search button"
+msgstr ""
+
+#: patterns/template-404.php
+msgctxt "Pattern title"
+msgid "Page not found content"
+msgstr ""
+
+#: patterns/template-404.php:14
+msgid "Page not found"
+msgstr ""
+
+#: patterns/template-404.php:17
+msgid "The page you are looking for does not exist or has moved. Try a search:"
+msgstr ""
+
+#: patterns/template-archive-episodes.php
+msgctxt "Pattern title"
+msgid "Episode archive content"
+msgstr ""
+
+#: patterns/template-archive-episodes.php:39
+#: patterns/template-archive.php:36
+#: patterns/template-home.php:38
+msgid "Nothing found here yet."
+msgstr ""
+
+#: patterns/template-archive.php
+msgctxt "Pattern title"
+msgid "Archive content"
+msgstr ""
+
+#: patterns/template-front-page.php
+msgctxt "Pattern title"
+msgid "Front page content"
+msgstr ""
+
+#: patterns/template-home.php
+msgctxt "Pattern title"
+msgid "Blog content"
+msgstr ""
+
+#: patterns/template-page.php
+msgctxt "Pattern title"
+msgid "Page content"
+msgstr ""
+
+#: patterns/template-search.php
+msgctxt "Pattern title"
+msgid "Search results content"
+msgstr ""
+
+#: patterns/template-single-episode.php
+msgctxt "Pattern title"
+msgid "Episode content"
+msgstr ""
+
+#: patterns/template-single-episode.php:13
+msgid "Series:"
+msgstr ""
+
+#: patterns/template-single.php
+msgctxt "Pattern title"
+msgid "Post content"
+msgstr ""
+
+#: patterns/template-single.php:22
+msgid "Tags:"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Muted"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+#: styles/midnight.json
+#: styles/paper.json
+#: styles/studio.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+#: styles/paper.json
+msgctxt "Font family name"
+msgid "Body"
+msgstr ""
+
+#: theme.json
+#: styles/paper.json
+msgctxt "Font family name"
+msgid "Headings"
+msgstr ""
+
+#: theme.json
+#: styles/paper.json
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without title"
+msgstr ""
+
+#: styles/midnight.json
+msgctxt "Style variation name"
+msgid "Midnight"
+msgstr ""
+
+#: styles/paper.json
+msgctxt "Style variation name"
+msgid "Paper"
+msgstr ""
+
+#: styles/studio.json
+msgctxt "Style variation name"
+msgid "Studio"
+msgstr ""
