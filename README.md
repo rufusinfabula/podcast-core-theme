@@ -29,6 +29,10 @@ Pick one in *Appearance → Editor → Styles*:
 
 Every variation uses the same 7 color slugs (`base`, `surface`, `contrast`, `muted`, `primary`, `secondary`, `accent`) and font slugs (`body`, `heading`, `mono`), so content keeps working when you switch. Elena adds extra accent colors (`accent-amber`, `accent-brown`, `accent-mauve`, `accent-magenta`, `accent-pink`, `neutral`) and the font families `montserrat`, `literata`, `recursive`.
 
+## Block styles
+
+- **Highlighted line** (paragraph, heading): one block per line, each on a band coloured from the palette. Used by the Hero. The text colour follows the band; set a text colour on the block to override it.
+
 ## Patterns
 
 Insertable (category *Podcast*): Hero, Listen on (platform buttons), Latest episodes, Latest news, Newsletter call to action, and series/episode calls to action:

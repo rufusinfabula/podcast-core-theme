@@ -49,7 +49,8 @@
         "buttonText": "var(--wp--preset--color--contrast)",
         "buttonHoverText": "var(--wp--preset--color--contrast)"
       },
-      "episodeNumber": "var(--wp--preset--color--contrast)"
+      "episodeNumber": "var(--wp--preset--color--contrast)",
+      "onPrimary": "var(--wp--preset--color--contrast)"
     }
   },
   "styles": {

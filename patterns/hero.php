@@ -4,7 +4,7 @@
  * Slug: podcast-core-theme/hero
  * Categories: podcast-core-theme, banner, featured
  * Keywords: hero, podcast, intro
- * Description: Show title, tagline, platform buttons and one or more images. Add several images to get a crossfade slideshow.
+ * Description: Tagline on coloured lines (Highlighted line style), subtitle, platform buttons and one or more images. Add several images to get a crossfade slideshow.
  *
  * @package PodcastCoreTheme
  */
@@ -16,12 +16,26 @@
 	<div class="wp-block-columns alignwide are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
-			<!-- wp:heading {"level":1,"className":"pct-hero__title"} -->
-			<h1 class="wp-block-heading pct-hero__title"><?php esc_html_e( 'Stories worth listening to', 'podcast-core-theme' ); ?></h1>
-			<!-- /wp:heading -->
+			<!-- wp:site-title {"level":1,"isLink":false,"className":"screen-reader-text"} /-->
+
+			<!-- wp:group {"className":"pct-lines","style":{"spacing":{"blockGap":"0.3rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
+			<div class="wp-block-group pct-lines">
+				<!-- wp:paragraph {"className":"is-style-pct-line","backgroundColor":"contrast"} -->
+				<p class="is-style-pct-line has-contrast-background-color has-background"><?php esc_html_e( 'Real stories,', 'podcast-core-theme' ); ?></p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:paragraph {"className":"is-style-pct-line","backgroundColor":"accent"} -->
+				<p class="is-style-pct-line has-accent-background-color has-background"><?php esc_html_e( 'real people,', 'podcast-core-theme' ); ?></p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:paragraph {"className":"is-style-pct-line","backgroundColor":"base"} -->
+				<p class="is-style-pct-line has-base-background-color has-background"><?php esc_html_e( 'every week.', 'podcast-core-theme' ); ?></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"pct-hero__subtitle"} -->
-			<p class="pct-hero__subtitle"><?php esc_html_e( 'A new episode every week.', 'podcast-core-theme' ); ?></p>
+			<p class="pct-hero__subtitle"><?php esc_html_e( 'The podcast that tells the people behind the stories.', 'podcast-core-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:pattern {"slug":"podcast-core-theme/platform-links"} /-->

@@ -41,6 +41,9 @@
           "color": "#FF8FA3"
         }
       ]
+    },
+    "custom": {
+      "onAccent": "var(--wp--preset--color--base)"
     }
   },
   "styles": {

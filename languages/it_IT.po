@@ -20,12 +20,10 @@ msgstr ""
 msgid "Podcast Core Theme"
 msgstr ""
 
-
 #. Theme URI of the theme
 #: style.css
 msgid "https://github.com/rufusinfabula/podcast-core-theme"
 msgstr ""
-
 
 #. Description of the theme
 #: style.css
@@ -37,10 +35,13 @@ msgstr "Un tema a blocchi per siti di podcast. Pensato per Podcast Core Plugin: 
 msgid "Rufusinfabula"
 msgstr ""
 
-
 #: functions.php:52
 msgid "Podcast"
 msgstr "Podcast"
+
+#: functions.php:127
+msgid "Highlighted line"
+msgstr "Riga evidenziata"
 
 #: patterns/cta-episode-highlight.php
 msgctxt "Pattern title"
@@ -160,16 +161,24 @@ msgstr "Hero"
 
 #: patterns/hero.php
 msgctxt "Pattern description"
-msgid "Show title, tagline, platform buttons and one or more images. Add several images to get a crossfade slideshow."
-msgstr "Titolo, slogan, pulsanti delle piattaforme e una o più immagini. Con più immagini si ottiene una dissolvenza a rotazione."
-
-#: patterns/hero.php:20
-msgid "Stories worth listening to"
-msgstr "Storie che vale la pena ascoltare"
+msgid "Tagline on coloured lines (Highlighted line style), subtitle, platform buttons and one or more images. Add several images to get a crossfade slideshow."
+msgstr "Slogan su righe colorate (stile Riga evidenziata), sottotitolo, pulsanti delle piattaforme e una o più immagini. Con più immagini si ottiene una dissolvenza a rotazione."
 
 #: patterns/hero.php:24
-msgid "A new episode every week."
-msgstr "Un nuovo episodio ogni settimana."
+msgid "Real stories,"
+msgstr "Storie vere,"
+
+#: patterns/hero.php:28
+msgid "real people,"
+msgstr "persone vere,"
+
+#: patterns/hero.php:32
+msgid "every week."
+msgstr "ogni settimana."
+
+#: patterns/hero.php:38
+msgid "The podcast that tells the people behind the stories."
+msgstr "Il podcast che racconta le persone dietro le storie."
 
 #: patterns/latest-episodes.php
 msgctxt "Pattern title"
@@ -256,7 +265,7 @@ msgstr "Finestra di ricerca"
 #: patterns/search-overlay.php:12
 #: patterns/search-overlay.php:18
 #: patterns/search-toggle.php:12
-#: patterns/template-404.php:19
+#: patterns/template-404.php:17
 msgid "Search"
 msgstr "Cerca"
 
@@ -278,7 +287,7 @@ msgid "Search results grouped by type"
 msgstr "Risultati di ricerca raggruppati per tipo"
 
 #: patterns/search-results.php:21
-#: patterns/template-home.php:15
+#: patterns/template-home.php:13
 msgid "News"
 msgstr "News"
 
@@ -310,11 +319,11 @@ msgctxt "Pattern title"
 msgid "Page not found content"
 msgstr "Contenuto pagina non trovata"
 
-#: patterns/template-404.php:14
+#: patterns/template-404.php:12
 msgid "Page not found"
 msgstr "Pagina non trovata"
 
-#: patterns/template-404.php:17
+#: patterns/template-404.php:15
 msgid "The page you are looking for does not exist or has moved. Try a search:"
 msgstr "La pagina che cerchi non esiste o è stata spostata. Prova a cercare:"
 
@@ -323,9 +332,9 @@ msgctxt "Pattern title"
 msgid "Episode archive content"
 msgstr "Contenuto archivio episodi"
 
-#: patterns/template-archive-episodes.php:39
-#: patterns/template-archive.php:36
-#: patterns/template-home.php:38
+#: patterns/template-archive-episodes.php:37
+#: patterns/template-archive.php:34
+#: patterns/template-home.php:36
 msgid "Nothing found here yet."
 msgstr "Ancora nessun contenuto qui."
 
@@ -333,11 +342,6 @@ msgstr "Ancora nessun contenuto qui."
 msgctxt "Pattern title"
 msgid "Archive content"
 msgstr "Contenuto archivio"
-
-#: patterns/template-front-page.php
-msgctxt "Pattern title"
-msgid "Front page content"
-msgstr "Contenuto home page"
 
 #: patterns/template-home.php
 msgctxt "Pattern title"
@@ -359,7 +363,7 @@ msgctxt "Pattern title"
 msgid "Episode content"
 msgstr "Contenuto episodio"
 
-#: patterns/template-single-episode.php:13
+#: patterns/template-single-episode.php:11
 msgid "Series:"
 msgstr "Serie:"
 
@@ -368,7 +372,7 @@ msgctxt "Pattern title"
 msgid "Post content"
 msgstr "Contenuto articolo"
 
-#: patterns/template-single.php:22
+#: patterns/template-single.php:20
 msgid "Tags:"
 msgstr "Tag:"
 

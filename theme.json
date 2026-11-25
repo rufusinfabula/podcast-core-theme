@@ -149,6 +149,10 @@
           "size": "clamp(3rem, 8vw, 6rem)"
         }
       ]
+    },
+    "custom": {
+      "onPrimary": "var(--wp--preset--color--base)",
+      "onAccent": "var(--wp--preset--color--contrast)"
     }
   },
   "styles": {

@@ -110,3 +110,23 @@ function podcast_core_theme_featured_series() {
 	);
 	return ( ! is_wp_error( $terms ) && $terms ) ? $terms[0] : null;
 }
+
+/**
+ * Block style "Highlighted line" for paragraphs and headings: big bold text on a
+ * coloured band, one block per line (as in the hero). The band colour is picked from
+ * the palette, so it follows the active style variation; the text colour adapts to it.
+ */
+add_action(
+	'init',
+	function () {
+		foreach ( array( 'core/paragraph', 'core/heading' ) as $block ) {
+			register_block_style(
+				$block,
+				array(
+					'name'  => 'pct-line',
+					'label' => __( 'Highlighted line', 'podcast-core-theme' ),
+				)
+			);
+		}
+	}
+);

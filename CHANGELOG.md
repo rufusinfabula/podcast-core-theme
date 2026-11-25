@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.4 – unreleased
+- New block style **Highlighted line** for paragraphs and headings: big bold text on a palette-coloured band; the text colour adapts to the band (custom properties `onPrimary`, `onAccent` per variation).
+- Hero uses three highlighted lines plus a visually hidden H1 with the site title.
+- `.screen-reader-text` helper.
+
 ## 0.2.3 – unreleased
 - Templates now contain the `<main>` group directly, with sections as separate patterns inside. The Site Editor uses `<main>` as the section root, so patterns and blocks can be dropped into any template (before, `<main>` was hidden inside a template pattern and drops were ignored).
 - Removed the `template-front-page` pattern: the front page template lists Hero, Latest episodes and Latest news directly.
