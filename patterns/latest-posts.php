@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Latest news
- * Slug: podcast-core-theme/latest-posts
- * Categories: podcast-core-theme, query
+ * Slug: podcast-core-studio/latest-posts
+ * Categories: podcast-core-studio, query
  * Keywords: news, blog, posts
  * Description: The three most recent blog posts.
  *
@@ -13,7 +13,7 @@ $pct_section = podcast_core_theme_section( 'news-section', array( 'align' => 'wi
 ?>
 <?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:heading -->
-	<h2 class="wp-block-heading"><?php esc_html_e( 'Latest news', 'podcast-core-theme' ); ?></h2>
+	<h2 class="wp-block-heading"><?php esc_html_e( 'Latest news', 'podcast-core-studio' ); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false}} -->
@@ -30,7 +30,7 @@ $pct_section = podcast_core_theme_section( 'news-section', array( 'align' => 'wi
 
 		<!-- wp:query-no-results -->
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'No news published yet.', 'podcast-core-theme' ); ?></p>
+			<p><?php esc_html_e( 'No news published yet.', 'podcast-core-studio' ); ?></p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: All series
- * Slug: podcast-core-theme/cta-series-grid
- * Categories: podcast-core-theme, call-to-action
+ * Slug: podcast-core-studio/cta-series-grid
+ * Categories: podcast-core-studio, call-to-action
  * Keywords: series, shows, archive, grid
  * Description: One card per series with description, number of episodes and a link to its archive. Cards are created from the series that exist when the pattern is inserted.
  *
@@ -27,7 +27,7 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 ?>
 <?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:heading -->
-	<h2 class="wp-block-heading"><?php esc_html_e( 'Our series', 'podcast-core-theme' ); ?></h2>
+	<h2 class="wp-block-heading"><?php esc_html_e( 'Our series', 'podcast-core-studio' ); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:group {"layout":{"type":"grid","columnCount":<?php echo (int) $pct_columns; ?>}} -->
@@ -40,14 +40,14 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html( $pct_term->description ? wp_trim_words( $pct_term->description, 24 ) : __( 'Add a short description of this series.', 'podcast-core-theme' ) ); ?></p>
+			<p><?php echo esc_html( $pct_term->description ? wp_trim_words( $pct_term->description, 24 ) : __( 'Add a short description of this series.', 'podcast-core-studio' ) ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"className":"pct-series-card__count"} -->
 			<p class="pct-series-card__count">
 				<?php
 				/* translators: %s: number of episodes */
-				echo esc_html( sprintf( _n( '%s episode', '%s episodes', $pct_term->count, 'podcast-core-theme' ), number_format_i18n( $pct_term->count ) ) );
+				echo esc_html( sprintf( _n( '%s episode', '%s episodes', $pct_term->count, 'podcast-core-studio' ), number_format_i18n( $pct_term->count ) ) );
 				?>
 			</p>
 			<!-- /wp:paragraph -->
@@ -55,7 +55,7 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( (string) get_term_link( $pct_term ) ); ?>"><?php esc_html_e( 'Listen', 'podcast-core-theme' ); ?></a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( (string) get_term_link( $pct_term ) ); ?>"><?php esc_html_e( 'Listen', 'podcast-core-studio' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->

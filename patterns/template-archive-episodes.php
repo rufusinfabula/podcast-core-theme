@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Episode archive content
- * Slug: podcast-core-theme/template-archive-episodes
+ * Slug: podcast-core-studio/template-archive-episodes
  * Inserter: no
  *
  * @package PodcastCoreTheme
@@ -34,7 +34,7 @@
 
 	<!-- wp:query-no-results -->
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Nothing found here yet.', 'podcast-core-theme' ); ?></p>
+		<p><?php esc_html_e( 'Nothing found here yet.', 'podcast-core-studio' ); ?></p>
 		<!-- /wp:paragraph -->
 	<!-- /wp:query-no-results -->
 </div>

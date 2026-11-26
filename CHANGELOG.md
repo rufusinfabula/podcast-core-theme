@@ -1,10 +1,13 @@
 # Changelog
 
+## 0.4.0 – unreleased
+- **Renamed to Podcast Core Studio** (was Podcast Core Theme): theme folder `podcast-core-studio`, text domain and pattern prefix `podcast-core-studio/`. Works with Podcast Core Engine (was Podcast Core Plugin). Sites updating by hand: move saved styles and templates to the new theme slug and replace `podcast-core-theme/` with `podcast-core-studio/` in saved templates.
+
 ## 0.3.2 – unreleased
 - Header: optional "Subscribe to the podcast" button (bell icon), shown only when the Email sign-up address is set in Settings → Podcast; hidden on small screens.
 
 ## 0.3.1 – unreleased
-- "Email sign-up" pattern (was "Newsletter call to action"): invites listeners to get new episodes by email; the button links to the Email sign-up address set in Podcast Core Plugin (Settings → Podcast).
+- "Email sign-up" pattern (was "Newsletter call to action"): invites listeners to get new episodes by email; the button links to the Email sign-up address set in Podcast Core Engine (Settings → Podcast).
 
 ## 0.3.0 – unreleased
 - Patterns build their sections with the Podcast Core section blocks (Hero, Episodes, News, Call to action) when the plugin is active, falling back to Group blocks otherwise (`podcast_core_theme_section()`).

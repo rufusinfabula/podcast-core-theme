@@ -1,6 +1,6 @@
-# Podcast Core Theme
+# Podcast Core Studio
 
-A block (full site editing) theme for podcast websites. Designed to work with [Podcast Core Plugin](https://github.com/rufusinfabula/podcast-core-plugin).
+A block (full site editing) theme for podcast websites. Designed to work with [Podcast Core Engine](https://github.com/rufusinfabula/podcast-core-engine).
 
 > Status: early development (0.2.0). Not ready for production.
 
@@ -10,7 +10,7 @@ A block (full site editing) theme for podcast websites. Designed to work with [P
 - Episode page with the Podcast Core **Episode Player** block, series and previous/next links
 - Episode archive and series archives with episode number on each card
 - Search overlay in the header and search results **grouped by type** (episodes, news, pages)
-- Platform buttons and footer icons read from *Settings → Podcast* (Podcast Core Plugin)
+- Platform buttons and footer icons read from *Settings → Podcast* (Podcast Core Engine)
 - System font stacks by default; the Elena variation uses bundled, self-hosted fonts (no external requests)
 - Translation ready; Italian included
 
@@ -31,7 +31,7 @@ Every variation uses the same 7 color slugs (`base`, `surface`, `contrast`, `mut
 
 ## Sections
 
-With Podcast Core Plugin active, the patterns use its section blocks: **Hero**, **Episodes section**, **News section**, **Call to action section**. Their spacing and colours for the whole site are in *Design → Styles → Blocks*; the plugin's **Sections** panel in the Site Editor switches sections on and off. Defaults live in `theme.json` under `styles.blocks`.
+With Podcast Core Engine active, the patterns use its section blocks: **Hero**, **Episodes section**, **News section**, **Call to action section**. Their spacing and colours for the whole site are in *Design → Styles → Blocks*; the plugin's **Sections** panel in the Site Editor switches sections on and off. Defaults live in `theme.json` under `styles.blocks`.
 
 ## Block styles
 
@@ -51,7 +51,7 @@ Each template has its own `<main>` group (the Site Editor's section root, so new
 
 ## Child themes
 
-Override any template, part or pattern in a child theme (`Template: podcast-core-theme`). Useful hooks and classes:
+Override any template, part or pattern in a child theme (`Template: podcast-core-studio`). Useful hooks and classes:
 
 - CSS classes: `.pct-hero`, `.pct-hero__media` (add `data-interval` in ms to change the slideshow speed), `.pct-card`, `.pct-episode-number`, `.pct-search-*`, `.pct-footer`
 - Episode Player: custom properties on `.pc-player` (see the plugin README)
@@ -63,7 +63,7 @@ Override any template, part or pattern in a child theme (`Template: podcast-core
 
 - WordPress 6.7+
 - PHP 8.1+
-- Recommended: Podcast Core Plugin (without it, episode sections are simply hidden)
+- Recommended: Podcast Core Engine (without it, episode sections are simply hidden)
 
 ## Credits
 

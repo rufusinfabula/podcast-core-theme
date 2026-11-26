@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Search results grouped by type
- * Slug: podcast-core-theme/search-results
+ * Slug: podcast-core-studio/search-results
  * Inserter: no
  *
  * @package PodcastCoreTheme
@@ -18,11 +18,11 @@ if ( podcast_core_theme_has_episodes() ) {
 }
 $pct_posts_page   = (int) get_option( 'page_for_posts' );
 $pct_groups['post'] = array(
-	'label'   => $pct_posts_page ? get_the_title( $pct_posts_page ) : __( 'News', 'podcast-core-theme' ),
+	'label'   => $pct_posts_page ? get_the_title( $pct_posts_page ) : __( 'News', 'podcast-core-studio' ),
 	'archive' => $pct_posts_page ? get_permalink( $pct_posts_page ) : '',
 );
 $pct_groups['page'] = array(
-	'label'   => __( 'Pages', 'podcast-core-theme' ),
+	'label'   => __( 'Pages', 'podcast-core-studio' ),
 	'archive' => '',
 );
 
@@ -63,7 +63,7 @@ if ( '' !== $pct_term ) {
 				</article>
 			<?php endwhile; ?>
 			<?php if ( $pct_query->found_posts > 10 && $pct_group['archive'] ) : ?>
-				<p class="pct-search-group__more"><a href="<?php echo esc_url( $pct_group['archive'] ); ?>"><?php esc_html_e( 'See all', 'podcast-core-theme' ); ?></a></p>
+				<p class="pct-search-group__more"><a href="<?php echo esc_url( $pct_group['archive'] ); ?>"><?php esc_html_e( 'See all', 'podcast-core-studio' ); ?></a></p>
 			<?php endif; ?>
 		</section>
 		<?php
@@ -75,9 +75,9 @@ $pct_html = ob_get_clean();
 if ( 0 === $pct_total ) {
 	$pct_html = '<p class="pct-search-empty">' . esc_html(
 		'' === $pct_term
-			? __( 'Type something to search.', 'podcast-core-theme' )
+			? __( 'Type something to search.', 'podcast-core-studio' )
 			/* translators: %s: search term */
-			: sprintf( __( 'No results for “%s”.', 'podcast-core-theme' ), $pct_term )
+			: sprintf( __( 'No results for “%s”.', 'podcast-core-studio' ), $pct_term )
 	) . '</p>';
 }
 ?>

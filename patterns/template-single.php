@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post content
- * Slug: podcast-core-theme/template-single
+ * Slug: podcast-core-studio/template-single
  * Inserter: no
  *
  * @package PodcastCoreTheme
@@ -17,5 +17,5 @@
 <!-- /wp:group -->
 <!-- wp:post-featured-image {"align":"wide","aspectRatio":"16/9"} /-->
 <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
-<!-- wp:post-terms {"term":"post_tag","prefix":"<?php echo esc_attr( __( 'Tags:', 'podcast-core-theme' ) . ' ' ); ?>"} /-->
-<!-- wp:pattern {"slug":"podcast-core-theme/post-navigation"} /-->
+<!-- wp:post-terms {"term":"post_tag","prefix":"<?php echo esc_attr( __( 'Tags:', 'podcast-core-studio' ) . ' ' ); ?>"} /-->
+<!-- wp:pattern {"slug":"podcast-core-studio/post-navigation"} /-->

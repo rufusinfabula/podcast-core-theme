@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Series spotlight with episodes
- * Slug: podcast-core-theme/cta-series-episodes
- * Categories: podcast-core-theme, call-to-action, query
+ * Slug: podcast-core-studio/cta-series-episodes
+ * Categories: podcast-core-studio, call-to-action, query
  * Keywords: series, special, episodes, spotlight
  * Description: Introduces a series and lists its latest episodes, with a button to the series archive.
  *
@@ -14,7 +14,7 @@ if ( ! podcast_core_theme_has_episodes() ) {
 }
 $pct_series = podcast_core_theme_featured_series();
 $pct_link   = $pct_series ? get_term_link( $pct_series ) : get_post_type_archive_link( 'podcast_episode' );
-$pct_name   = $pct_series ? $pct_series->name : __( 'Series name', 'podcast-core-theme' );
+$pct_name   = $pct_series ? $pct_series->name : __( 'Series name', 'podcast-core-studio' );
 $pct_query  = array(
 	'perPage'  => 3,
 	'pages'    => 0,
@@ -35,7 +35,7 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 		<!-- wp:column {"width":"34%"} -->
 		<div class="wp-block-column" style="flex-basis:34%">
 			<!-- wp:paragraph {"className":"pct-eyebrow"} -->
-			<p class="pct-eyebrow"><?php esc_html_e( 'Series', 'podcast-core-theme' ); ?></p>
+			<p class="pct-eyebrow"><?php esc_html_e( 'Series', 'podcast-core-studio' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading -->
@@ -43,13 +43,13 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'Describe the series in one or two sentences: who you talk to and what listeners will discover.', 'podcast-core-theme' ); ?></p>
+			<p><?php esc_html_e( 'Describe the series in one or two sentences: who you talk to and what listeners will discover.', 'podcast-core-studio' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button -->
-				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( (string) $pct_link ); ?>"><?php esc_html_e( 'All episodes of the series', 'podcast-core-theme' ); ?></a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( (string) $pct_link ); ?>"><?php esc_html_e( 'All episodes of the series', 'podcast-core-studio' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -74,7 +74,7 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 
 				<!-- wp:query-no-results -->
 					<!-- wp:paragraph -->
-					<p><?php esc_html_e( 'No episodes in this series yet.', 'podcast-core-theme' ); ?></p>
+					<p><?php esc_html_e( 'No episodes in this series yet.', 'podcast-core-studio' ); ?></p>
 					<!-- /wp:paragraph -->
 				<!-- /wp:query-no-results -->
 			</div>

@@ -2,8 +2,8 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Podcast Core Theme 0.2.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
+"Project-Id-Version: Podcast Core Studio 0.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-studio\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it_IT\n"
@@ -13,22 +13,22 @@ msgstr ""
 "POT-Creation-Date: 2026-11-25T19:34:05+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: podcast-core-theme\n"
+"X-Domain: podcast-core-studio\n"
 
 #. Theme Name of the theme
 #: style.css
-msgid "Podcast Core Theme"
+msgid "Podcast Core Studio"
 msgstr ""
 
 #. Theme URI of the theme
 #: style.css
-msgid "https://github.com/rufusinfabula/podcast-core-theme"
+msgid "https://github.com/rufusinfabula/podcast-core-studio"
 msgstr ""
 
 #. Description of the theme
 #: style.css
-msgid "A block theme for podcast websites. A home page with a bold hero and the latest episodes, episode pages with a sticky audio player, series archives, search results grouped by type and five style variations (Elena, Chiara, Morgana, Viola, Rosa). Every section can be styled from Design → Styles → Blocks. Works best with Podcast Core Plugin, which adds episodes, series, the audio player and import from your podcast RSS feed; without it the theme works as a clean blog theme."
-msgstr "Un tema a blocchi per siti di podcast. Homepage con hero d'impatto e ultimi episodi, pagine degli episodi con player audio fisso, archivi delle serie, ricerca con risultati raggruppati e cinque varianti di stile (Elena, Chiara, Morgana, Viola, Rosa). Ogni sezione si personalizza da Design → Stili → Blocchi. Dà il meglio con Podcast Core Plugin, che aggiunge episodi, serie, player audio e import dal feed RSS del podcast; senza il plugin funziona come un semplice tema per blog."
+msgid "A block theme for podcast websites. A home page with a bold hero and the latest episodes, episode pages with a sticky audio player, series archives, search results grouped by type and five style variations (Elena, Chiara, Morgana, Viola, Rosa). Every section can be styled from Design → Styles → Blocks. Works best with Podcast Core Engine, which adds episodes, series, the audio player and import from your podcast RSS feed; without it the theme works as a clean blog theme."
+msgstr "Un tema a blocchi per siti di podcast. Homepage con hero d'impatto e ultimi episodi, pagine degli episodi con player audio fisso, archivi delle serie, ricerca con risultati raggruppati e cinque varianti di stile (Elena, Chiara, Morgana, Viola, Rosa). Ogni sezione si personalizza da Design → Stili → Blocchi. Dà il meglio con Podcast Core Engine, che aggiunge episodi, serie, player audio e import dal feed RSS del podcast; senza il plugin funziona come un semplice tema per blog."
 
 #. Author of the theme
 #: style.css
@@ -268,8 +268,8 @@ msgstr "Ascolta su"
 
 #: patterns/platform-links.php
 msgctxt "Pattern description"
-msgid "Buttons to the platforms set in Settings → Podcast (Podcast Core Plugin)."
-msgstr "Pulsanti verso le piattaforme impostate in Impostazioni → Podcast (Podcast Core Plugin)."
+msgid "Buttons to the platforms set in Settings → Podcast (Podcast Core Engine)."
+msgstr "Pulsanti verso le piattaforme impostate in Impostazioni → Podcast (Podcast Core Engine)."
 
 #: patterns/post-navigation.php
 msgctxt "Pattern title"

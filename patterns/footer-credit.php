@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer credit
- * Slug: podcast-core-theme/footer-credit
+ * Slug: podcast-core-studio/footer-credit
  * Inserter: no
  *
  * @package PodcastCoreTheme

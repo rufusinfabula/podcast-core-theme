@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Special episode
- * Slug: podcast-core-theme/cta-episode-highlight
- * Categories: podcast-core-theme, call-to-action, query
+ * Slug: podcast-core-studio/cta-episode-highlight
+ * Categories: podcast-core-studio, call-to-action, query
  * Keywords: episode, special, featured, highlight
  * Description: One episode in the spotlight with cover, title, excerpt and a listen button. By default the latest episode of a series; change the filter to pick another one.
  *
@@ -42,12 +42,12 @@ $pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wid
 				<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 				<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
 					<!-- wp:paragraph {"className":"pct-eyebrow"} -->
-					<p class="pct-eyebrow"><?php esc_html_e( 'Special episode', 'podcast-core-theme' ); ?></p>
+					<p class="pct-eyebrow"><?php esc_html_e( 'Special episode', 'podcast-core-studio' ); ?></p>
 					<!-- /wp:paragraph -->
 					<!-- wp:post-title {"isLink":true,"level":2} /-->
 					<!-- wp:post-terms {"term":"podcast_series"} /-->
 					<!-- wp:post-excerpt {"excerptLength":30} /-->
-					<!-- wp:read-more {"content":"<?php echo esc_attr( __( 'Listen now →', 'podcast-core-theme' ) ); ?>","className":"pct-cta__more"} /-->
+					<!-- wp:read-more {"content":"<?php echo esc_attr( __( 'Listen now →', 'podcast-core-studio' ) ); ?>","className":"pct-cta__more"} /-->
 				</div>
 				<!-- /wp:column -->
 			</div>

@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Listen on
- * Slug: podcast-core-theme/platform-links
- * Categories: podcast-core-theme, call-to-action
+ * Slug: podcast-core-studio/platform-links
+ * Categories: podcast-core-studio, call-to-action
  * Keywords: spotify, apple, youtube, rss, listen
- * Description: Buttons to the platforms set in Settings → Podcast (Podcast Core Plugin).
+ * Description: Buttons to the platforms set in Settings → Podcast (Podcast Core Engine).
  *
  * @package PodcastCoreTheme
  */

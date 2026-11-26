@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Previous / next links
- * Slug: podcast-core-theme/post-navigation
+ * Slug: podcast-core-studio/post-navigation
  * Inserter: no
  *
  * @package PodcastCoreTheme

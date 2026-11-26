@@ -1,5 +1,5 @@
 /**
- * Podcast Core Theme: search overlay and hero slideshow.
+ * Podcast Core Studio: search overlay and hero slideshow.
  */
 ( function () {
 	// Search overlay: any .pct-search-toggle opens the overlay it controls.

@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Latest episodes
- * Slug: podcast-core-theme/latest-episodes
- * Categories: podcast-core-theme, query
+ * Slug: podcast-core-studio/latest-episodes
+ * Categories: podcast-core-studio, query
  * Keywords: episodes, latest, podcast
  * Description: The three most recent episodes with a link to the archive.
  *
@@ -18,11 +18,11 @@ $pct_section = podcast_core_theme_section( 'episodes-section', array( 'align' =>
 	<!-- wp:group {"className":"pct-section__header","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
 	<div class="wp-block-group pct-section__header">
 		<!-- wp:heading -->
-		<h2 class="wp-block-heading"><?php esc_html_e( 'Latest episodes', 'podcast-core-theme' ); ?></h2>
+		<h2 class="wp-block-heading"><?php esc_html_e( 'Latest episodes', 'podcast-core-studio' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph -->
-		<p><a href="<?php echo esc_url( (string) get_post_type_archive_link( 'podcast_episode' ) ); ?>"><?php esc_html_e( 'All episodes →', 'podcast-core-theme' ); ?></a></p>
+		<p><a href="<?php echo esc_url( (string) get_post_type_archive_link( 'podcast_episode' ) ); ?>"><?php esc_html_e( 'All episodes →', 'podcast-core-studio' ); ?></a></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -44,7 +44,7 @@ $pct_section = podcast_core_theme_section( 'episodes-section', array( 'align' =>
 
 		<!-- wp:query-no-results -->
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'No episodes published yet.', 'podcast-core-theme' ); ?></p>
+			<p><?php esc_html_e( 'No episodes published yet.', 'podcast-core-studio' ); ?></p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

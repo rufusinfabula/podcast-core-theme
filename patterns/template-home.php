@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog content
- * Slug: podcast-core-theme/template-home
+ * Slug: podcast-core-studio/template-home
  * Inserter: no
  *
  * @package PodcastCoreTheme
@@ -10,7 +10,7 @@
 ?>
 <?php $pct_posts_page = (int) get_option( 'page_for_posts' ); ?>
 <!-- wp:heading {"level":1,"align":"wide"} -->
-<h1 class="wp-block-heading alignwide"><?php echo esc_html( $pct_posts_page ? get_the_title( $pct_posts_page ) : __( 'News', 'podcast-core-theme' ) ); ?></h1>
+<h1 class="wp-block-heading alignwide"><?php echo esc_html( $pct_posts_page ? get_the_title( $pct_posts_page ) : __( 'News', 'podcast-core-studio' ) ); ?></h1>
 <!-- /wp:heading -->
 <!-- wp:query {"query":{"inherit":true},"align":"wide"} -->
 <div class="wp-block-query alignwide">
@@ -33,7 +33,7 @@
 
 	<!-- wp:query-no-results -->
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Nothing found here yet.', 'podcast-core-theme' ); ?></p>
+		<p><?php esc_html_e( 'Nothing found here yet.', 'podcast-core-studio' ); ?></p>
 		<!-- /wp:paragraph -->
 	<!-- /wp:query-no-results -->
 </div>

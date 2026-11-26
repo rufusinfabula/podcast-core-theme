@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer platform icons
- * Slug: podcast-core-theme/footer-platforms
+ * Slug: podcast-core-studio/footer-platforms
  * Inserter: no
  *
  * @package PodcastCoreTheme

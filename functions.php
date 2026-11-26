@@ -1,13 +1,13 @@
 <?php
 /**
- * Podcast Core Theme functions.
+ * Podcast Core Studio functions.
  *
  * @package PodcastCoreTheme
  */
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'PODCAST_CORE_THEME_VERSION', wp_get_theme( 'podcast-core-theme' )->get( 'Version' ) );
+define( 'PODCAST_CORE_THEME_VERSION', wp_get_theme( 'podcast-core-studio' )->get( 'Version' ) );
 
 /**
  * Theme setup: translations and editor styles.
@@ -15,7 +15,7 @@ define( 'PODCAST_CORE_THEME_VERSION', wp_get_theme( 'podcast-core-theme' )->get(
 add_action(
 	'after_setup_theme',
 	function () {
-		load_theme_textdomain( 'podcast-core-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'podcast-core-studio', get_template_directory() . '/languages' );
 		add_theme_support( 'editor-styles' );
 		add_editor_style( 'style.css' );
 	}
@@ -27,9 +27,9 @@ add_action(
 add_action(
 	'wp_enqueue_scripts',
 	function () {
-		wp_enqueue_style( 'podcast-core-theme', get_template_directory_uri() . '/style.css', array(), PODCAST_CORE_THEME_VERSION );
+		wp_enqueue_style( 'podcast-core-studio', get_template_directory_uri() . '/style.css', array(), PODCAST_CORE_THEME_VERSION );
 		wp_enqueue_script(
-			'podcast-core-theme',
+			'podcast-core-studio',
 			get_template_directory_uri() . '/assets/js/theme.js',
 			array(),
 			PODCAST_CORE_THEME_VERSION,
@@ -48,21 +48,21 @@ add_action(
 	'init',
 	function () {
 		register_block_pattern_category(
-			'podcast-core-theme',
-			array( 'label' => __( 'Podcast', 'podcast-core-theme' ) )
+			'podcast-core-studio',
+			array( 'label' => __( 'Podcast', 'podcast-core-studio' ) )
 		);
 	}
 );
 
 /**
- * Whether Podcast Core Plugin is active (episodes available).
+ * Whether Podcast Core Engine is active (episodes available).
  */
 function podcast_core_theme_has_episodes(): bool {
 	return post_type_exists( 'podcast_episode' );
 }
 
 /**
- * Platform links configured in Podcast Core Plugin (Settings → Podcast), in display order.
+ * Platform links configured in Podcast Core Engine (Settings → Podcast), in display order.
  *
  * @return array<string, array{label: string, url: string}>
  */
@@ -124,7 +124,7 @@ add_action(
 				$block,
 				array(
 					'name'  => 'pct-line',
-					'label' => __( 'Highlighted line', 'podcast-core-theme' ),
+					'label' => __( 'Highlighted line', 'podcast-core-studio' ),
 				)
 			);
 		}

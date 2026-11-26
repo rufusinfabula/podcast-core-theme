@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page content
- * Slug: podcast-core-theme/template-page
+ * Slug: podcast-core-studio/template-page
  * Inserter: no
  *
  * @package PodcastCoreTheme
