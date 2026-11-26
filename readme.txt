@@ -51,7 +51,7 @@ This theme is in early development.
 
 == Copyright ==
 
-Podcast Core Theme, (C) 2026 Rufusinfabula.
+Podcast Core Theme, (C) 2026 Fabio Ranfi Solutions.
 Podcast Core Theme is distributed under the terms of the GNU GPL v2 or later.
 
 This theme bundles the following third-party resources:
@@ -72,5 +72,5 @@ License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/arrowtype/recursive
 
 hero.svg placeholder image
-Copyright 2026 Rufusinfabula
+Copyright 2026 Fabio Ranfi Solutions
 License: GPLv2 or later

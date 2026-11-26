@@ -32,7 +32,7 @@ msgstr "Un tema a blocchi per siti di podcast. Pensato per Podcast Core Plugin: 
 
 #. Author of the theme
 #: style.css
-msgid "Rufusinfabula"
+msgid "Fabio Ranfi Solutions"
 msgstr ""
 
 #: functions.php:52
