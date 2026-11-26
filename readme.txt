@@ -3,7 +3,7 @@ Contributors: rufusinfabula
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.3.1
+Stable tag: 0.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,9 +19,6 @@ Includes five style variations: Elena, Chiara (light), Morgana (dark), Viola (vi
 This theme is in early development.
 
 == Changelog ==
-
-= 0.3.1 =
-* Homepage can be a regular page (Settings → Reading); Homepage starter pattern.
 
 = 0.3.0 =
 * Sections built with Podcast Core section blocks, styleable in Design → Styles → Blocks.

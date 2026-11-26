@@ -180,16 +180,6 @@ msgstr "ogni settimana."
 msgid "The podcast that tells the people behind the stories."
 msgstr "Il podcast che racconta le persone dietro le storie."
 
-#: patterns/homepage.php
-msgctxt "Pattern title"
-msgid "Homepage"
-msgstr "Homepage"
-
-#: patterns/homepage.php
-msgctxt "Pattern description"
-msgid "A complete home page: hero, latest episodes and latest news. Use it as the starting point of the page set as homepage in Settings → Reading."
-msgstr "Una homepage completa: hero, ultimi episodi e ultime news. Usala come punto di partenza per la pagina impostata come homepage in Impostazioni → Lettura."
-
 #: patterns/latest-episodes.php
 msgctxt "Pattern title"
 msgid "Latest episodes"

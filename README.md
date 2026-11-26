@@ -29,13 +29,6 @@ Pick one in *Appearance → Editor → Styles*:
 
 Every variation uses the same 7 color slugs (`base`, `surface`, `contrast`, `muted`, `primary`, `secondary`, `accent`) and font slugs (`body`, `heading`, `mono`), so content keeps working when you switch. Elena adds extra accent colors (`accent-amber`, `accent-brown`, `accent-mauve`, `accent-magenta`, `accent-pink`, `neutral`) and the font families `montserrat`, `literata`, `recursive`.
 
-## Homepage
-
-Two ways:
-
-- **As a page (recommended)**: create a page, pick the *Homepage* starter layout and the *Page without title* template, then select it in *Settings → Reading → Your homepage displays → A static page*. Edit it from *Design → Pages*. The theme's front-page template is skipped automatically.
-- **As a template**: with *Your latest posts* selected, the front page uses the `front-page` template, editable in *Design → Templates*.
-
 ## Sections
 
 With Podcast Core Plugin active, the patterns use its section blocks: **Hero**, **Episodes section**, **News section**, **Call to action section**. Their spacing and colours for the whole site are in *Design → Styles → Blocks*; the plugin's **Sections** panel in the Site Editor switches sections on and off. Defaults live in `theme.json` under `styles.blocks`.
