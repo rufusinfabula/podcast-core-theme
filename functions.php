@@ -170,3 +170,18 @@ function podcast_core_theme_section( string $section, array $attrs = array() ): 
 		sprintf( "</div>\n<!-- /wp:%s -->", $name ),
 	);
 }
+
+/**
+ * Homepage as a page: when Settings → Reading shows a static page on the front,
+ * skip the front-page template so the page itself is displayed (with its own page
+ * template, e.g. "Page without title"). Its content is edited in Design → Pages.
+ */
+add_filter(
+	'frontpage_template_hierarchy',
+	function ( $templates ) {
+		if ( 'page' === get_option( 'show_on_front' ) && (int) get_option( 'page_on_front' ) ) {
+			return array();
+		}
+		return $templates;
+	}
+);

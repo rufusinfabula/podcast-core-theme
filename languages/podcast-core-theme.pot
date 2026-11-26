@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Podcast Core Theme 0.2.3\n"
+"Project-Id-Version: Podcast Core Theme 0.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-25T22:05:53+00:00\n"
+"POT-Creation-Date: 2026-11-26T06:33:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-theme\n"
@@ -177,6 +177,16 @@ msgstr ""
 
 #: patterns/hero.php:38
 msgid "The podcast that tells the people behind the stories."
+msgstr ""
+
+#: patterns/homepage.php
+msgctxt "Pattern title"
+msgid "Homepage"
+msgstr ""
+
+#: patterns/homepage.php
+msgctxt "Pattern description"
+msgid "A complete home page: hero, latest episodes and latest news. Use it as the starting point of the page set as homepage in Settings → Reading."
 msgstr ""
 
 #: patterns/latest-episodes.php

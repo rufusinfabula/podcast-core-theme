@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 – unreleased
+- **Homepage as a page**: when Settings → Reading shows a static page, the front-page template is skipped and that page is displayed with its own page template (use *Page without title*). The page is edited from Design → Pages.
+- New starter pattern **Homepage** (hero, latest episodes, latest news), offered when creating a page.
+
 ## 0.3.0 – unreleased
 - Patterns build their sections with the Podcast Core section blocks (Hero, Episodes, News, Call to action) when the plugin is active, falling back to Group blocks otherwise (`podcast_core_theme_section()`).
 - Default colours and spacing of each section moved to `theme.json` (`styles.blocks.podcast-core/*`), editable in Design → Styles → Blocks.
