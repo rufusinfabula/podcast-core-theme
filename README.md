@@ -65,6 +65,10 @@ Override any template, part or pattern in a child theme (`Template: podcast-core
 - PHP 8.1+
 - Recommended: Podcast Core Plugin (without it, episode sections are simply hidden)
 
+## Credits
+
+Developed by **[Fabio Ranfi Solutions](https://www.fabioranfi.it)** — Fabio Ranfi, GitHub [@rufusinfabula](https://github.com/rufusinfabula).
+
 ## License
 
 GPL-2.0-or-later. See [LICENSE](LICENSE).
