@@ -27,8 +27,8 @@ msgstr ""
 
 #. Description of the theme
 #: style.css
-msgid "A block theme for podcast websites. Designed to work with Podcast Core Plugin: episode pages, audio player, series archives and grouped search."
-msgstr "Un tema a blocchi per siti di podcast. Pensato per Podcast Core Plugin: pagine degli episodi, player audio, archivi delle serie e ricerca raggruppata."
+msgid "A block theme for podcast websites. A home page with a bold hero and the latest episodes, episode pages with a sticky audio player, series archives, search results grouped by type and five style variations (Elena, Chiara, Morgana, Viola, Rosa). Every section can be styled from Design → Styles → Blocks. Works best with Podcast Core Plugin, which adds episodes, series, the audio player and import from your podcast RSS feed; without it the theme works as a clean blog theme."
+msgstr "Un tema a blocchi per siti di podcast. Homepage con hero d'impatto e ultimi episodi, pagine degli episodi con player audio fisso, archivi delle serie, ricerca con risultati raggruppati e cinque varianti di stile (Elena, Chiara, Morgana, Viola, Rosa). Ogni sezione si personalizza da Design → Stili → Blocchi. Dà il meglio con Podcast Core Plugin, che aggiunge episodi, serie, player audio e import dal feed RSS del podcast; senza il plugin funziona come un semplice tema per blog."
 
 #. Author of the theme
 #: style.css

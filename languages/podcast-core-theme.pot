@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Podcast Core Theme 0.3.1\n"
+"Project-Id-Version: Podcast Core Theme 0.3.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-26T10:05:25+00:00\n"
+"POT-Creation-Date: 2026-11-26T10:32:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-theme\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #. Description of the theme
 #: style.css
-msgid "A block theme for podcast websites. Designed to work with Podcast Core Plugin: episode pages, audio player, series archives and grouped search."
+msgid "A block theme for podcast websites. A home page with a bold hero and the latest episodes, episode pages with a sticky audio player, series archives, search results grouped by type and five style variations (Elena, Chiara, Morgana, Viola, Rosa). Every section can be styled from Design → Styles → Blocks. Works best with Podcast Core Plugin, which adds episodes, series, the audio player and import from your podcast RSS feed; without it the theme works as a clean blog theme."
 msgstr ""
 
 #. Author of the theme

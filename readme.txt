@@ -11,12 +11,41 @@ A block theme for podcast websites.
 
 == Description ==
 
-Podcast Core Theme is a block (full site editing) theme for podcasts: home page with latest episodes, episode pages with audio player, series archives and grouped search results.
-Designed to work with Podcast Core Plugin.
+Podcast Core Theme is a block (full site editing) theme for podcast websites.
 
-Includes five style variations: Elena, Chiara (light), Morgana (dark), Viola (vivid) and Rosa (pastel).
+* **Home page** with a bold hero (tagline on coloured lines, platform buttons, crossfading images), latest episodes and latest news.
+* **Episode pages** with a sticky audio player, episode number, series and previous/next links.
+* **Episode and series archives** with cover images and episode numbers.
+* **Search** in an overlay, with results grouped by type: episodes, news, pages.
+* **Five style variations**: Elena, Chiara (light), Morgana (dark), Viola (vivid), Rosa (pastel).
+* **Sections you can style**: with Podcast Core Plugin, Hero, Episodes, News and Call to action sections get their own spacing, colours and typography in Design → Styles → Blocks.
+* **Patterns** for special series, special episodes, all series, email sign-up and platform links.
+* **Highlighted line** block style: big bold text on a coloured band.
+* System fonts by default (fast, no external requests); the Elena variation bundles Montserrat and Literata.
+* Translation ready; Italian included.
 
-This theme is in early development.
+Podcast Core Theme is designed for **Podcast Core Plugin**, which adds episodes, series, the audio player and automatic import from your podcast RSS feed. Without the plugin the theme works as a clean blog theme and the podcast sections are hidden.
+
+== Installation ==
+
+1. In your admin area, go to Appearance → Themes → Add New Theme and search for "Podcast Core Theme", or upload the theme zip.
+2. Activate the theme.
+3. Install and activate Podcast Core Plugin to publish episodes.
+4. Pick a style variation in Appearance → Editor → Styles.
+
+== Frequently Asked Questions ==
+
+= Does it work without Podcast Core Plugin? =
+
+Yes. The theme works as a blog theme; the episode sections and the player appear when the plugin is active.
+
+= How do I change the home page? =
+
+Go to Appearance → Editor → Templates → Front Page. Add, remove or reorder sections; podcast patterns are in the "Podcast" category of the inserter.
+
+= How do I change the spacing of a section on the whole site? =
+
+Appearance → Editor → Styles → Blocks → Hero (or Episodes section, News section, Call to action section) → Dimensions.
 
 == Changelog ==
 
@@ -56,6 +85,10 @@ Podcast Core Theme is distributed under the terms of the GNU GPL v2 or later.
 
 This theme bundles the following third-party resources:
 
+screenshot.png and assets/images/hero.svg
+Copyright 2026 Fabio Ranfi Solutions
+License: GPLv2 or later
+
 Montserrat Font
 Copyright 2011 The Montserrat Project Authors
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
@@ -71,6 +104,3 @@ Copyright 2019 The Recursive Project Authors
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/arrowtype/recursive
 
-hero.svg placeholder image
-Copyright 2026 Fabio Ranfi Solutions
-License: GPLv2 or later
