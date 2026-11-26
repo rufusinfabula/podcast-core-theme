@@ -67,7 +67,7 @@ Override any template, part or pattern in a child theme (`Template: podcast-core
 
 ## Credits
 
-Developed by **[Fabio Ranfi Solutions](https://www.fabioranfi.it)** — Fabio Ranfi, GitHub [@rufusinfabula](https://github.com/rufusinfabula).
+Developed by **[Fabio Ranfi Solutions](https://github.com/rufusinfabula)** (Fabio Ranfi, @rufusinfabula).
 
 ## License
 

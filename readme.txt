@@ -51,7 +51,7 @@ This theme is in early development.
 
 == Copyright ==
 
-Podcast Core Theme, (C) 2026 Fabio Ranfi Solutions, https://www.fabioranfi.it
+Podcast Core Theme, (C) 2026 Fabio Ranfi Solutions, https://github.com/rufusinfabula
 Podcast Core Theme is distributed under the terms of the GNU GPL v2 or later.
 
 This theme bundles the following third-party resources:
