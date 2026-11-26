@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.2 – unreleased
+- Header: optional "Subscribe to the podcast" button (bell icon), shown only when the Email sign-up address is set in Settings → Podcast; hidden on small screens.
+
 ## 0.3.1 – unreleased
 - "Email sign-up" pattern (was "Newsletter call to action"): invites listeners to get new episodes by email; the button links to the Email sign-up address set in Podcast Core Plugin (Settings → Podcast).
 

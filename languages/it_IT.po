@@ -159,6 +159,20 @@ msgctxt "Pattern title"
 msgid "Footer platform icons"
 msgstr "Icone piattaforme nel footer"
 
+#: patterns/header-signup.php
+msgctxt "Pattern title"
+msgid "Header sign-up button"
+msgstr "Pulsante di iscrizione nell'header"
+
+#: patterns/header-signup.php
+msgctxt "Pattern description"
+msgid "\"Subscribe to the podcast\" button, shown only when an Email sign-up address is set in Settings → Podcast."
+msgstr "Pulsante \"Iscriviti al podcast\", visibile solo se in Impostazioni → Podcast è impostato l'indirizzo Iscrizione via email."
+
+#: patterns/header-signup.php:19
+msgid "Subscribe to the podcast"
+msgstr "Iscriviti al podcast"
+
 #: patterns/hero.php
 msgctxt "Pattern title"
 msgid "Hero"
