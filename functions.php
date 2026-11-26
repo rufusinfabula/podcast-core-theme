@@ -130,3 +130,43 @@ add_action(
 		}
 	}
 );
+
+/**
+ * Opening and closing markup of a page section. Uses the Podcast Core section block
+ * (podcast-core/{$section}) when the plugin is active, so its spacing and colours can be
+ * set in Design → Styles → Blocks; falls back to a Group otherwise.
+ *
+ * @param string $section   hero | episodes-section | news-section | cta-section.
+ * @param array  $attrs     Block attributes (align, className, backgroundColor, textColor).
+ * @return array{0: string, 1: string} Opening and closing markup.
+ */
+function podcast_core_theme_section( string $section, array $attrs = array() ): array {
+	$block = 'podcast-core/' . $section;
+	if ( WP_Block_Type_Registry::get_instance()->is_registered( $block ) ) {
+		$name  = $block;
+		$class = 'wp-block-podcast-core-' . $section;
+	} else {
+		$name  = 'group';
+		$class = 'wp-block-group';
+	}
+	$attrs   += array( 'layout' => array( 'type' => 'constrained' ) );
+	$classes  = array( $class );
+	if ( ! empty( $attrs['align'] ) ) {
+		$classes[] = 'align' . $attrs['align'];
+	}
+	if ( ! empty( $attrs['className'] ) ) {
+		$classes[] = $attrs['className'];
+	}
+	if ( ! empty( $attrs['textColor'] ) ) {
+		$classes[] = 'has-' . $attrs['textColor'] . '-color';
+		$classes[] = 'has-text-color';
+	}
+	if ( ! empty( $attrs['backgroundColor'] ) ) {
+		$classes[] = 'has-' . $attrs['backgroundColor'] . '-background-color';
+		$classes[] = 'has-background';
+	}
+	return array(
+		sprintf( "<!-- wp:%s %s -->\n<div class=\"%s\">", $name, wp_json_encode( $attrs, JSON_UNESCAPED_SLASHES ), esc_attr( implode( ' ', $classes ) ) ),
+		sprintf( "</div>\n<!-- /wp:%s -->", $name ),
+	);
+}

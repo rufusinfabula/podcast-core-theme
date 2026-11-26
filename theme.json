@@ -309,6 +309,42 @@
         "border": {
           "radius": "0px"
         }
+      },
+      "podcast-core/hero": {
+        "color": {
+          "background": "var:preset|color|primary",
+          "text": "var:preset|color|base"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|40",
+            "bottom": "var:preset|spacing|40"
+          }
+        }
+      },
+      "podcast-core/episodes-section": {
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|60",
+            "bottom": "var:preset|spacing|60"
+          }
+        }
+      },
+      "podcast-core/news-section": {
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|60",
+            "bottom": "var:preset|spacing|60"
+          }
+        }
+      },
+      "podcast-core/cta-section": {
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|60",
+            "bottom": "var:preset|spacing|60"
+          }
+        }
       }
     }
   },

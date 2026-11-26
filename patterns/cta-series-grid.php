@@ -23,9 +23,9 @@ if ( is_wp_error( $pct_terms ) || ! $pct_terms ) {
 	return;
 }
 $pct_columns = min( 3, count( $pct_terms ) );
+$pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wide', 'className' => 'pct-section pct-series-grid' ) );
 ?>
-<!-- wp:group {"align":"wide","className":"pct-section pct-series-grid","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide pct-section pct-series-grid">
+<?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:heading -->
 	<h2 class="wp-block-heading"><?php esc_html_e( 'Our series', 'podcast-core-theme' ); ?></h2>
 	<!-- /wp:heading -->
@@ -64,5 +64,4 @@ $pct_columns = min( 3, count( $pct_terms ) );
 		<?php endforeach; ?>
 	</div>
 	<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
+<?php echo $pct_section[1]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

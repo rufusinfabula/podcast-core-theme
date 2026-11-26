@@ -12,9 +12,9 @@
 if ( ! podcast_core_theme_has_episodes() ) {
 	return;
 }
+$pct_section = podcast_core_theme_section( 'episodes-section', array( 'align' => 'wide', 'className' => 'pct-section' ) );
 ?>
-<!-- wp:group {"align":"wide","className":"pct-section","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide pct-section">
+<?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:group {"className":"pct-section__header","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
 	<div class="wp-block-group pct-section__header">
 		<!-- wp:heading -->
@@ -49,5 +49,4 @@ if ( ! podcast_core_theme_has_episodes() ) {
 		<!-- /wp:query-no-results -->
 	</div>
 	<!-- /wp:query -->
-</div>
-<!-- /wp:group -->
+<?php echo $pct_section[1]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

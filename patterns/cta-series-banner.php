@@ -12,9 +12,9 @@
 $pct_series = podcast_core_theme_featured_series();
 $pct_link   = $pct_series ? get_term_link( $pct_series ) : get_post_type_archive_link( 'podcast_episode' );
 $pct_name   = $pct_series ? $pct_series->name : __( 'Series name', 'podcast-core-theme' );
+$pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'full', 'className' => 'pct-cta pct-cta--banner', 'backgroundColor' => 'contrast', 'textColor' => 'base' ) );
 ?>
-<!-- wp:group {"align":"full","className":"pct-cta pct-cta--banner","backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull pct-cta pct-cta--banner has-base-color has-contrast-background-color has-text-color has-background">
+<?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 	<div class="wp-block-columns alignwide are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
@@ -50,5 +50,4 @@ $pct_name   = $pct_series ? $pct_series->name : __( 'Series name', 'podcast-core
 		<!-- /wp:column -->
 	</div>
 	<!-- /wp:columns -->
-</div>
-<!-- /wp:group -->
+<?php echo $pct_section[1]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

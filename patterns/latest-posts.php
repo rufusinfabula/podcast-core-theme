@@ -9,9 +9,9 @@
  * @package PodcastCoreTheme
  */
 
+$pct_section = podcast_core_theme_section( 'news-section', array( 'align' => 'wide', 'className' => 'pct-section pct-section--news' ) );
 ?>
-<!-- wp:group {"align":"wide","className":"pct-section pct-section--news","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide pct-section pct-section--news">
+<?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:heading -->
 	<h2 class="wp-block-heading"><?php esc_html_e( 'Latest news', 'podcast-core-theme' ); ?></h2>
 	<!-- /wp:heading -->
@@ -35,5 +35,4 @@
 		<!-- /wp:query-no-results -->
 	</div>
 	<!-- /wp:query -->
-</div>
-<!-- /wp:group -->
+<?php echo $pct_section[1]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

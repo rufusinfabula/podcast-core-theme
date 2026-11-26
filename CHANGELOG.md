@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 – unreleased
+- Patterns build their sections with the Podcast Core section blocks (Hero, Episodes, News, Call to action) when the plugin is active, falling back to Group blocks otherwise (`podcast_core_theme_section()`).
+- Default colours and spacing of each section moved to `theme.json` (`styles.blocks.podcast-core/*`), editable in Design → Styles → Blocks.
+- Rosa sets the Hero text colour through block styles.
+
 ## 0.2.5 – unreleased
 - Hero vertical padding is now a block setting (Styles → Dimensions → Padding) instead of fixed CSS, and smaller by default (spacing 40 = 1.5rem). Older saved heroes without a padding setting get the same default.
 

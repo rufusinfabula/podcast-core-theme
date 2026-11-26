@@ -25,9 +25,9 @@ $pct_query  = array(
 if ( $pct_series ) {
 	$pct_query['taxQuery'] = array( 'podcast_series' => array( $pct_series->term_id ) );
 }
+$pct_section = podcast_core_theme_section( 'cta-section', array( 'align' => 'wide', 'className' => 'pct-cta pct-cta--episode' ) );
 ?>
-<!-- wp:group {"align":"wide","className":"pct-cta pct-cta--episode","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide pct-cta pct-cta--episode">
+<?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:query <?php echo wp_json_encode( array( 'query' => $pct_query ) ); ?> -->
 	<div class="wp-block-query">
 		<!-- wp:post-template -->
@@ -55,5 +55,4 @@ if ( $pct_series ) {
 		<!-- /wp:post-template -->
 	</div>
 	<!-- /wp:query -->
-</div>
-<!-- /wp:group -->
+<?php echo $pct_section[1]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

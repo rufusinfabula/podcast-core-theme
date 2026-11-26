@@ -9,9 +9,9 @@
  * @package PodcastCoreTheme
  */
 
+$pct_section = podcast_core_theme_section( 'hero', array( 'align' => 'full', 'className' => 'pct-hero' ) );
 ?>
-<!-- wp:group {"align":"full","className":"pct-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull pct-hero" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+<?php echo $pct_section[0]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 	<div class="wp-block-columns alignwide are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
@@ -51,5 +51,4 @@
 		<!-- /wp:column -->
 	</div>
 	<!-- /wp:columns -->
-</div>
-<!-- /wp:group -->
+<?php echo $pct_section[1]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

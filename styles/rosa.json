@@ -75,6 +75,13 @@
           }
         }
       }
+    },
+    "blocks": {
+      "podcast-core/hero": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        }
+      }
     }
   }
 }
