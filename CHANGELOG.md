@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.3.1 – unreleased
-- Newsletter pattern: the button links to the Newsletter address set in Podcast Core Plugin (Settings → Podcast).
+- "Email sign-up" pattern (was "Newsletter call to action"): invites listeners to get new episodes by email; the button links to the Email sign-up address set in Podcast Core Plugin (Settings → Podcast).
 
 ## 0.3.0 – unreleased
 - Patterns build their sections with the Podcast Core section blocks (Hero, Episodes, News, Call to action) when the plugin is active, falling back to Group blocks otherwise (`podcast_core_theme_section()`).

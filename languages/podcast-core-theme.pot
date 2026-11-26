@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Podcast Core Theme 0.3.0\n"
+"Project-Id-Version: Podcast Core Theme 0.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-26T10:00:08+00:00\n"
+"POT-Creation-Date: 2026-11-26T10:02:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-theme\n"
@@ -226,12 +226,12 @@ msgstr ""
 
 #: patterns/newsletter.php
 msgctxt "Pattern title"
-msgid "Newsletter call to action"
+msgid "Email sign-up"
 msgstr ""
 
 #: patterns/newsletter.php
 msgctxt "Pattern description"
-msgid "A banner inviting visitors to subscribe to the newsletter. The button uses the Newsletter address in Settings → Podcast."
+msgid "A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Settings → Podcast."
 msgstr ""
 
 #: patterns/newsletter.php:19
@@ -239,11 +239,11 @@ msgid "Get new episodes in your inbox"
 msgstr ""
 
 #: patterns/newsletter.php:23
-msgid "Subscribe to the newsletter: episodes, behind the scenes and stories."
+msgid "Sign up and get every new episode by email, as soon as it is out."
 msgstr ""
 
 #: patterns/newsletter.php:31
-msgid "Subscribe"
+msgid "Sign up"
 msgstr ""
 
 #: patterns/platform-links.php

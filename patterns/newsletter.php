@@ -1,10 +1,10 @@
 <?php
 /**
- * Title: Newsletter call to action
+ * Title: Email sign-up
  * Slug: podcast-core-theme/newsletter
  * Categories: podcast-core-theme, call-to-action
- * Keywords: newsletter, subscribe, email
- * Description: A banner inviting visitors to subscribe to the newsletter. The button uses the Newsletter address in Settings → Podcast.
+ * Keywords: newsletter, subscribe, email, sign up, updates
+ * Description: A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Settings → Podcast.
  *
  * @package PodcastCoreTheme
  */
@@ -20,7 +20,7 @@ $pct_newsletter = function_exists( 'podcast_core_get_setting' ) ? (string) podca
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Subscribe to the newsletter: episodes, behind the scenes and stories.', 'podcast-core-theme' ); ?></p>
+		<p><?php esc_html_e( 'Sign up and get every new episode by email, as soon as it is out.', 'podcast-core-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -28,7 +28,7 @@ $pct_newsletter = function_exists( 'podcast_core_get_setting' ) ? (string) podca
 	<!-- wp:buttons -->
 	<div class="wp-block-buttons">
 		<!-- wp:button -->
-		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( $pct_newsletter ? $pct_newsletter : '#' ); ?>"><?php esc_html_e( 'Subscribe', 'podcast-core-theme' ); ?></a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( $pct_newsletter ? $pct_newsletter : '#' ); ?>"><?php esc_html_e( 'Sign up', 'podcast-core-theme' ); ?></a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
