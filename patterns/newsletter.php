@@ -4,11 +4,12 @@
  * Slug: podcast-core-theme/newsletter
  * Categories: podcast-core-theme, call-to-action
  * Keywords: newsletter, subscribe, email
- * Description: A banner inviting visitors to subscribe to the newsletter.
+ * Description: A banner inviting visitors to subscribe to the newsletter. The button uses the Newsletter address in Settings → Podcast.
  *
  * @package PodcastCoreTheme
  */
 
+$pct_newsletter = function_exists( 'podcast_core_get_setting' ) ? (string) podcast_core_get_setting( 'newsletter_url' ) : '';
 ?>
 <!-- wp:group {"align":"wide","className":"pct-newsletter","style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"secondary","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide pct-newsletter has-secondary-background-color has-background" style="border-radius:12px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
@@ -27,7 +28,7 @@
 	<!-- wp:buttons -->
 	<div class="wp-block-buttons">
 		<!-- wp:button -->
-		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Subscribe', 'podcast-core-theme' ); ?></a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( $pct_newsletter ? $pct_newsletter : '#' ); ?>"><?php esc_html_e( 'Subscribe', 'podcast-core-theme' ); ?></a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

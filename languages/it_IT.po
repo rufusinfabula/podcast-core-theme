@@ -227,8 +227,8 @@ msgstr "Invito alla newsletter"
 
 #: patterns/newsletter.php
 msgctxt "Pattern description"
-msgid "A banner inviting visitors to subscribe to the newsletter."
-msgstr "Un riquadro che invita a iscriversi alla newsletter."
+msgid "A banner inviting visitors to subscribe to the newsletter. The button uses the Newsletter address in Settings → Podcast."
+msgstr "Un riquadro che invita a iscriversi alla newsletter. Il pulsante usa l'indirizzo Newsletter di Impostazioni → Podcast."
 
 #: patterns/newsletter.php:18
 msgid "Get new episodes in your inbox"

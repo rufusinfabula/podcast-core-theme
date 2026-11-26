@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.1 – unreleased
+- Newsletter pattern: the button links to the Newsletter address set in Podcast Core Plugin (Settings → Podcast).
+
 ## 0.3.0 – unreleased
 - Patterns build their sections with the Podcast Core section blocks (Hero, Episodes, News, Call to action) when the plugin is active, falling back to Group blocks otherwise (`podcast_core_theme_section()`).
 - Default colours and spacing of each section moved to `theme.json` (`styles.blocks.podcast-core/*`), editable in Design → Styles → Blocks.
