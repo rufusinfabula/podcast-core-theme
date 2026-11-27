@@ -96,6 +96,7 @@ Montserrat Font
 Copyright 2011 The Montserrat Project Authors
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/JulietaUla/Montserrat
+Files: variable font (weights 100–900, regular and italic), Latin and Latin Extended subsets, from Google Fonts.
 
 Literata Font
 Copyright 2017 The Literata Project Authors

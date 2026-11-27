@@ -1,6 +1,7 @@
 # Changelog
 
 ## 0.4.0 – unreleased
+- **Fix: Montserrat (Elena) was never shown.** The bundled files only contained the Cyrillic Extended subset, so browsers fell back to the system font for all Latin text. Now one variable font (weights 100–900, regular and italic) in Latin and Latin Extended subsets, 4 files instead of 8. Sites that saved their styles keep a copy of the old font list: re-save Typography or update the saved global styles.
 - Styles for the cookie notice and the video placeholders of Podcast Core Engine (palette colours, Accept and Reject alike).
 - Episode page: the video (if any) comes after the episode text, with the player alone at the top and a "Watch the video" card (episode image with a play sign), centred after the second block of text, that scrolls smoothly to the video, below the sticky player (Episode Video block, Podcast Core Engine 0.10).
 - Hero: the image column goes from the top to the bottom edge of the hero (no rounded corners) and images are never cropped; the hero's vertical padding now applies to the text column. On small screens the image sits behind the text, on the right.
