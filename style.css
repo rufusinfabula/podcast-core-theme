@@ -752,6 +752,73 @@ a.pc-series__inner:hover .pc-series__name {
 .pc-player-video iframe {
 	border-radius: 4px;
 }
+/* Episode video after the text (Episode Video block). When the "Watch the video" button scrolls
+   to it, it stops below the sticky player (about 125px, 85px on small screens) and the admin bar. */
+.pc-episode-video {
+	margin-top: var(--wp--preset--spacing--50);
+	scroll-margin-top: calc(125px + var(--wp-admin--admin-bar--height, 0px) + 1rem);
+}
+@media (max-width: 768px) {
+	.pc-episode-video {
+		scroll-margin-top: calc(85px + var(--wp-admin--admin-bar--height, 0px) + 1rem);
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+/* "Watch the video" link under the player: pill, card or bar (Episode Player → Button style) */
+.pc-player-videolink {
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: 0;
+	font-family: var(--wp--preset--font-family--heading);
+}
+.pc-player-videolink--pill a {
+	color: var(--wp--preset--color--primary);
+	font-size: var(--wp--preset--font-size--small);
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+.pc-player-videolink--pill a:hover,
+.pc-player-videolink--pill a:focus-visible {
+	background-color: var(--wp--preset--color--primary);
+	border-color: var(--wp--preset--color--primary);
+	color: var(--wp--custom--on-primary, var(--wp--preset--color--base));
+}
+.pc-player-videolink--in-text {
+	margin-block: var(--wp--preset--spacing--40);
+}
+.pc-player-videolink--card a {
+	background: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--border-subtle, rgba(0, 0, 0, 0.12));
+	color: var(--wp--preset--color--contrast);
+	transition: border-color 0.15s ease;
+}
+.pc-player-videolink--card a:hover,
+.pc-player-videolink--card a:focus-visible {
+	border-color: var(--wp--preset--color--primary);
+}
+.pc-player-videolink--card .pc-player-videolink__arrow {
+	color: var(--wp--preset--color--primary);
+}
+.pc-player-videolink--card .pc-player-videolink__play {
+	background: color-mix(in srgb, var(--wp--preset--color--contrast) 35%, transparent);
+}
+.pc-player-videolink--bar {
+	margin-top: 0;
+}
+.pc-player-videolink--bar a {
+	background: var(--wp--custom--player--accent, var(--wp--preset--color--primary));
+	color: var(--wp--custom--on-primary, var(--wp--preset--color--base));
+	transition: filter 0.15s ease;
+}
+.pc-player-videolink--bar a:hover,
+.pc-player-videolink--bar a:focus-visible {
+	filter: brightness(1.08);
+}
+.pc-episode-video iframe {
+	border-radius: 4px;
+}
 @media (max-width: 768px) {
 	.pc-player {
 		--pc-cover-size: 142px;
