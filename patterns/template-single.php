@@ -9,8 +9,9 @@
 
 ?>
 <!-- wp:post-title {"level":1} /-->
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group">
+<!-- wp:group {"className":"pct-post-meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group pct-post-meta">
+	<!-- wp:post-author-name {"isLink":true} /-->
 	<!-- wp:post-date /-->
 	<!-- wp:post-terms {"term":"category"} /-->
 </div>

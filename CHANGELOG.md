@@ -1,6 +1,8 @@
 # Changelog
 
 ## 0.4.0 – unreleased
+- Single post: the author name, linked to the author page, is shown before the date and categories (author · date · categories).
+- **Author page** (`author.html`): profile picture, name and biography (Users → Profile → Biographical Info), then the author's posts as a compact list (small image, title, date) with pagination. New pattern `podcast-core-studio/template-author`.
 - **Renamed to Podcast Core Studio** (was Podcast Core Theme): theme folder `podcast-core-studio`, text domain and pattern prefix `podcast-core-studio/`. Works with Podcast Core Engine (was Podcast Core Plugin). Sites updating by hand: move saved styles and templates to the new theme slug and replace `podcast-core-theme/` with `podcast-core-studio/` in saved templates.
 
 ## 0.3.2 – unreleased
