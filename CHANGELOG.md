@@ -1,6 +1,7 @@
 # Changelog
 
 ## 0.4.0 – unreleased
+- Styles for the cookie notice and the video placeholders of Podcast Core Engine (palette colours, Accept and Reject alike).
 - Episode page: the video (if any) comes after the episode text, with the player alone at the top and a "Watch the video" card (episode image with a play sign), centred after the second block of text, that scrolls smoothly to the video, below the sticky player (Episode Video block, Podcast Core Engine 0.10).
 - Hero: the image column goes from the top to the bottom edge of the hero (no rounded corners) and images are never cropped; the hero's vertical padding now applies to the text column. On small screens the image sits behind the text, on the right.
 - Hero images can be chosen in **Podcast → Settings → Styles** (needs Podcast Core Engine 0.10): they replace the images placed in the hero template; more than one rotate with the crossfade.
