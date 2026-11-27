@@ -27,7 +27,8 @@ add_action(
 add_action(
 	'wp_enqueue_scripts',
 	function () {
-		wp_enqueue_style( 'podcast-core-studio', get_template_directory_uri() . '/style.css', array(), PODCAST_CORE_THEME_VERSION );
+		// Version + file time: browsers fetch the stylesheet again whenever it changes.
+		wp_enqueue_style( 'podcast-core-studio', get_template_directory_uri() . '/style.css', array(), PODCAST_CORE_THEME_VERSION . '.' . filemtime( get_template_directory() . '/style.css' ) );
 		wp_enqueue_script(
 			'podcast-core-studio',
 			get_template_directory_uri() . '/assets/js/theme.js',
@@ -62,7 +63,7 @@ function podcast_core_theme_has_episodes(): bool {
 }
 
 /**
- * Platform links configured in Podcast Core Engine (Settings → Podcast), in display order.
+ * Platform links configured in Podcast Core Engine (Podcast → Settings → Podcast), in display order.
  *
  * @return array<string, array{label: string, url: string}>
  */
@@ -170,3 +171,72 @@ function podcast_core_theme_section( string $section, array $attrs = array() ): 
 		sprintf( "</div>\n<!-- /wp:%s -->", $name ),
 	);
 }
+
+/**
+ * Search and "Subscribe to the podcast" inside the mobile menu: on small screens the header search
+ * button and sign-up button are hidden and appear at the end of the menu overlay instead (sign-up
+ * button, then a search field). Only navigation blocks with a mobile overlay, so footer menus are not
+ * touched; both items are hidden when the menu is not an open overlay.
+ */
+add_filter(
+	'render_block_core/navigation',
+	function ( string $html, array $block ): string {
+		if ( 'never' === ( $block['attrs']['overlayMenu'] ?? 'mobile' ) ) {
+			return $html;
+		}
+		$end = strrpos( $html, '</ul>' ); // closing tag of the top-level list (sub-menus close before it).
+		if ( false === $end ) {
+			return $html;
+		}
+		$items = '';
+		$url   = function_exists( 'podcast_core_get_setting' ) ? (string) podcast_core_get_setting( 'newsletter_url' ) : '';
+		if ( '' !== $url ) {
+			$items .= sprintf(
+				'<li class="wp-block-navigation-item pct-nav-signup"><a class="wp-block-navigation-item__content" href="%1$s"><span class="wp-block-navigation-item__label">%2$s</span></a></li>',
+				esc_url( $url ),
+				esc_html__( 'Subscribe to the podcast', 'podcast-core-studio' )
+			);
+		}
+		$items .= sprintf(
+			'<li class="wp-block-navigation-item pct-nav-search"><form role="search" method="get" action="%1$s"><label class="screen-reader-text" for="pct-nav-search-input">%2$s</label><input type="search" id="pct-nav-search-input" name="s" placeholder="%3$s"><button type="submit" aria-label="%2$s"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button></form></li>',
+			esc_url( home_url( '/' ) ),
+			esc_attr__( 'Search', 'podcast-core-studio' ),
+			esc_attr__( 'Search episodes, news, pages…', 'podcast-core-studio' )
+		);
+		return substr_replace( $html, $items, $end, 0 );
+	},
+	10,
+	2
+);
+
+/**
+ * Hero images chosen in Podcast → Settings → Styles replace the images placed in the hero's
+ * image column (.pct-hero__media). With more than one image the slideshow (theme.js) crossfades
+ * them. Nothing changes when none is chosen.
+ */
+add_filter(
+	'render_block_core/column',
+	function ( string $html, array $block ): string {
+		if ( ! function_exists( 'podcast_core_hero_images' ) || false === strpos( (string) ( $block['attrs']['className'] ?? '' ), 'pct-hero__media' ) ) {
+			return $html;
+		}
+		$ids   = podcast_core_hero_images();
+		$open  = strpos( $html, '>' );
+		$close = strrpos( $html, '</div>' );
+		if ( ! $ids || false === $open || false === $close ) {
+			return $html;
+		}
+		$figures = '';
+		foreach ( $ids as $i => $id ) {
+			$figures .= '<figure class="wp-block-image size-large">' . wp_get_attachment_image(
+				$id,
+				'large',
+				false,
+				0 === $i ? array( 'fetchpriority' => 'high', 'loading' => 'eager' ) : array( 'loading' => 'lazy' )
+			) . '</figure>';
+		}
+		return substr( $html, 0, $open + 1 ) . $figures . substr( $html, $close );
+	},
+	10,
+	2
+);

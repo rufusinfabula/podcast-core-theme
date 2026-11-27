@@ -4,7 +4,7 @@
  * Slug: podcast-core-studio/newsletter
  * Categories: podcast-core-studio, call-to-action
  * Keywords: newsletter, subscribe, email, sign up, updates
- * Description: A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Settings → Podcast.
+ * Description: A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Podcast → Settings → Podcast.
  *
  * @package PodcastCoreTheme
  */

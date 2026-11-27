@@ -4,7 +4,7 @@
  * Slug: podcast-core-studio/platform-links
  * Categories: podcast-core-studio, call-to-action
  * Keywords: spotify, apple, youtube, rss, listen
- * Description: Buttons to the platforms set in Settings → Podcast (Podcast Core Engine).
+ * Description: Buttons to the platforms set in Podcast → Settings → Podcast.
  *
  * @package PodcastCoreTheme
  */

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-27T09:50:47+00:00\n"
+"POT-Creation-Date: 2026-11-27T19:16:06+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-studio\n"
@@ -39,12 +39,30 @@ msgstr ""
 msgid "https://github.com/rufusinfabula"
 msgstr ""
 
-#: functions.php:52
+#: functions.php:53
 msgid "Podcast"
 msgstr ""
 
-#: functions.php:127
+#: functions.php:128
 msgid "Highlighted line"
+msgstr ""
+
+#: functions.php:197
+#: patterns/header-signup.php:19
+msgid "Subscribe to the podcast"
+msgstr ""
+
+#: functions.php:203
+#: patterns/search-overlay.php:12
+#: patterns/search-overlay.php:18
+#: patterns/search-toggle.php:12
+#: patterns/template-404.php:17
+msgid "Search"
+msgstr ""
+
+#: functions.php:204
+#: patterns/search-overlay.php:17
+msgid "Search episodes, news, pages…"
 msgstr ""
 
 #: patterns/cta-episode-highlight.php
@@ -129,6 +147,7 @@ msgid "One card per series with description, number of episodes and a link to it
 msgstr ""
 
 #: patterns/cta-series-grid.php:30
+#: patterns/series-list.php:19
 msgid "Our series"
 msgstr ""
 
@@ -165,11 +184,7 @@ msgstr ""
 
 #: patterns/header-signup.php
 msgctxt "Pattern description"
-msgid "\"Subscribe to the podcast\" button, shown only when an Email sign-up address is set in Settings → Podcast."
-msgstr ""
-
-#: patterns/header-signup.php:19
-msgid "Subscribe to the podcast"
+msgid "\"Subscribe to the podcast\" button, shown only when an Email sign-up address is set in Podcast → Settings → Podcast."
 msgstr ""
 
 #: patterns/hero.php
@@ -245,7 +260,7 @@ msgstr ""
 
 #: patterns/newsletter.php
 msgctxt "Pattern description"
-msgid "A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Settings → Podcast."
+msgid "A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Podcast → Settings → Podcast."
 msgstr ""
 
 #: patterns/newsletter.php:19
@@ -260,6 +275,20 @@ msgstr ""
 msgid "Sign up"
 msgstr ""
 
+#: patterns/partners.php
+msgctxt "Pattern title"
+msgid "Partners"
+msgstr ""
+
+#: patterns/partners.php
+msgctxt "Pattern description"
+msgid "Logos, names and short texts of partners, sponsors or friends (Podcast → Partners), with an editable title."
+msgstr ""
+
+#: patterns/partners.php:19
+msgid "Our partners"
+msgstr ""
+
 #: patterns/platform-links.php
 msgctxt "Pattern title"
 msgid "Listen on"
@@ -267,7 +296,7 @@ msgstr ""
 
 #: patterns/platform-links.php
 msgctxt "Pattern description"
-msgid "Buttons to the platforms set in Settings → Podcast (Podcast Core Engine)."
+msgid "Buttons to the platforms set in Podcast → Settings → Podcast."
 msgstr ""
 
 #: patterns/post-navigation.php
@@ -280,23 +309,12 @@ msgctxt "Pattern title"
 msgid "Search overlay"
 msgstr ""
 
-#: patterns/search-overlay.php:12
-#: patterns/search-overlay.php:18
-#: patterns/search-toggle.php:12
-#: patterns/template-404.php:17
-msgid "Search"
-msgstr ""
-
 #: patterns/search-overlay.php:14
 msgid "Close search"
 msgstr ""
 
 #: patterns/search-overlay.php:16
 msgid "Search for:"
-msgstr ""
-
-#: patterns/search-overlay.php:17
-msgid "Search episodes, news, pages…"
 msgstr ""
 
 #: patterns/search-results.php
@@ -330,6 +348,16 @@ msgstr ""
 #: patterns/search-toggle.php
 msgctxt "Pattern title"
 msgid "Search button"
+msgstr ""
+
+#: patterns/series-list.php
+msgctxt "Pattern title"
+msgid "Series list"
+msgstr ""
+
+#: patterns/series-list.php
+msgctxt "Pattern description"
+msgid "The podcast's series, or the sub-series of one series (block settings → Series to show), with icon and number of episodes, under an editable title."
 msgstr ""
 
 #: patterns/template-404.php

@@ -10,7 +10,7 @@ A block (full site editing) theme for podcast websites. Designed to work with [P
 - Episode page with the Podcast Core **Episode Player** block, series and previous/next links
 - Episode archive and series archives with episode number on each card
 - Search overlay in the header and search results **grouped by type** (episodes, news, pages)
-- Platform buttons and footer icons read from *Settings → Podcast* (Podcast Core Engine)
+- Platform buttons and footer icons read from *Podcast → Settings → Podcast*
 - System font stacks by default; the Elena variation uses bundled, self-hosted fonts (no external requests)
 - Translation ready; Italian included
 

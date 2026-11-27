@@ -1,6 +1,14 @@
 # Changelog
 
 ## 0.4.0 – unreleased
+- Hero: the image column goes from the top to the bottom edge of the hero (no rounded corners) and images are never cropped; the hero's vertical padding now applies to the text column. On small screens the image sits behind the text, on the right.
+- Hero images can be chosen in **Podcast → Settings → Styles** (needs Podcast Core Engine 0.10): they replace the images placed in the hero template; more than one rotate with the crossfade.
+- Header site title in the variation's heading font, extra bold (800).
+- **Small screens**: the site title stays on one line, as big as the width allows; search (a search field) and the header sign-up button move into the mobile menu (it was meant to be hidden, but a core layout rule kept showing it and squeezed the title); the mobile menu has a see-through background that blurs the page and bigger, well spaced items; the hero image goes behind the text, on the right and smaller.
+- The stylesheet URL changes whenever `style.css` changes (version + file time), so browsers never keep an outdated copy.
+- Fix: headings with the Highlighted line style got the large padding core gives to headings with a background.
+- **Series list pattern** (needs Podcast Core Engine 0.10): an editable title and the Series list block (main series or the sub-series of one series, with icons and number of episodes), with card and badge styles for `.pc-series`.
+- **Partners pattern** (needs Podcast Core Engine 0.10): an editable title and the Partners block (logos, names, short texts), with card styles for `.pc-partner`.
 - Single post: the author name, linked to the author page, is shown before the date and categories (author · date · categories).
 - **Author page** (`author.html`): profile picture, name and biography (Users → Profile → Biographical Info), then the author's posts as a compact list (small image, title, date) with pagination. New pattern `podcast-core-studio/template-author`.
 - **Renamed to Podcast Core Studio** (was Podcast Core Theme): theme folder `podcast-core-studio`, text domain and pattern prefix `podcast-core-studio/`. Works with Podcast Core Engine (was Podcast Core Plugin). Sites updating by hand: move saved styles and templates to the new theme slug and replace `podcast-core-theme/` with `podcast-core-studio/` in saved templates.

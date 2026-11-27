@@ -47,6 +47,57 @@ Tags: blog, entertainment, news, one-column, three-columns, wide-blocks, block-p
 	font-weight: 400;
 }
 
+/* Partners (Podcast Core Engine): cards with logo, name and short text */
+.pc-partner__inner {
+	padding: 1.25rem 1rem;
+	border: 1px solid var(--wp--preset--color--border-subtle, rgba(0, 0, 0, 0.12));
+	border-radius: 12px;
+	transition: border-color 0.15s ease;
+}
+a.pc-partner__inner:hover,
+a.pc-partner__inner:focus-visible {
+	border-color: var(--wp--preset--color--primary);
+}
+.pc-partner__name {
+	font-size: var(--wp--preset--font-size--medium);
+}
+.pc-partner__text {
+	font-size: var(--wp--preset--font-size--small);
+}
+a.pc-partner__inner:hover .pc-partner__name {
+	color: var(--wp--preset--color--primary);
+	text-decoration: none;
+}
+
+/* Series list (Podcast Core Engine): cards with icon, name, a badge with the number of episodes
+   and, optionally, the images of the latest episodes */
+.pc-series {
+	padding: 1rem 1.25rem;
+	background: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--border-subtle, rgba(0, 0, 0, 0.12));
+	border-radius: 12px;
+	transition: border-color 0.15s ease;
+}
+.pc-series:has(a.pc-series__inner:hover),
+.pc-series:has(a.pc-series__inner:focus-visible) {
+	border-color: var(--wp--preset--color--primary);
+}
+a.pc-series__inner:hover .pc-series__name {
+	color: var(--wp--preset--color--primary);
+	text-decoration: none;
+}
+.pc-series__name {
+	font-size: var(--wp--preset--font-size--medium);
+}
+.pc-series__more {
+	background: linear-gradient(to right, color-mix(in srgb, var(--wp--preset--color--primary) 30%, transparent), color-mix(in srgb, var(--wp--preset--color--primary) 8%, transparent));
+	color: var(--wp--preset--color--primary);
+}
+.pc-series__count {
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--custom--on-primary, var(--wp--preset--color--base));
+}
+
 /* Author page: picture, name, biography, then a compact list of posts */
 .pct-author-header {
 	gap: clamp(1rem, 4vw, 2.5rem);
@@ -155,6 +206,12 @@ Tags: blog, entertainment, news, one-column, three-columns, wide-blocks, block-p
 .pct-header {
 	gap: var(--wp--preset--spacing--40);
 }
+/* Site title: heading font of the style variation, extra bold */
+.pct-header .wp-block-site-title {
+	font-family: var(--wp--preset--font-family--heading);
+	font-weight: 800;
+	letter-spacing: -0.01em;
+}
 .pct-header .wp-block-site-logo img {
 	height: 56px;
 	width: auto;
@@ -168,7 +225,7 @@ Tags: blog, entertainment, news, one-column, three-columns, wide-blocks, block-p
 	text-decoration-thickness: 2px;
 }
 
-/* Sign-up button (Settings → Podcast → Email sign-up), with a bell icon */
+/* Sign-up button (Podcast → Settings → Podcast → Email sign-up), with a bell icon */
 .pct-header-signup {
 	flex-shrink: 0;
 }
@@ -186,10 +243,136 @@ Tags: blog, entertainment, news, one-column, three-columns, wide-blocks, block-p
 	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9'/%3E%3Cpath d='M10.3 21a1.94 1.94 0 0 0 3.4 0'/%3E%3C/svg%3E") center / contain no-repeat;
 	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9'/%3E%3Cpath d='M10.3 21a1.94 1.94 0 0 0 3.4 0'/%3E%3C/svg%3E") center / contain no-repeat;
 }
+
+/* Small screens: the site title on one line, as big as the width allows; search and sign-up move
+   into the menu, so the header has only the title and the menu button; smaller side padding. */
 @media (max-width: 781px) {
-	.pct-header-signup {
+	.wp-block-group.pct-header {
+		gap: var(--wp--preset--spacing--30);
+		padding-left: var(--wp--preset--spacing--30) !important;
+		padding-right: var(--wp--preset--spacing--30) !important;
+	}
+	.pct-header > .wp-block-group:first-child {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+	.pct-header .wp-block-site-title {
+		font-size: clamp(1.05rem, 5.4vw, 1.75rem);
+		line-height: 1.1;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	/* search and sign-up are in the menu (see .pct-nav-search, .pct-nav-signup) */
+	.pct-header .pct-search-toggle {
 		display: none;
 	}
+	.pct-header .wp-block-site-logo img {
+		height: 44px;
+	}
+	.pct-header__actions.wp-block-group {
+		flex-shrink: 0;
+		gap: 0.25rem;
+	}
+	/* more specific than core's .wp-block-buttons.is-layout-flex { display: flex } */
+	.pct-header .wp-block-buttons.pct-header-signup {
+		display: none;
+	}
+	.pct-header .wp-block-navigation__responsive-container-open {
+		display: inline-grid;
+		place-items: center;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* Mobile menu (navigation overlay): see-through background that blurs the page, big, well spaced
+   items, and the "Subscribe to the podcast" button as last item */
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--30);
+}
+/* Same selector as core's white default overlay (a background chosen on the block still wins) */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay) {
+	background-color: color-mix(in srgb, var(--wp--preset--color--surface) 70%, transparent);
+	-webkit-backdrop-filter: blur(14px) saturate(1.2);
+	backdrop-filter: blur(14px) saturate(1.2);
+}
+.wp-block-navigation:not(.has-text-color) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay) {
+	color: var(--wp--preset--color--contrast);
+}
+.pct-nav-signup,
+.pct-nav-search {
+	display: none !important; /* only in the open mobile menu */
+}
+.wp-block-navigation__responsive-container.is-menu-open .pct-nav-signup {
+	display: flex !important;
+	margin-top: var(--wp--preset--spacing--30);
+}
+.wp-block-navigation__responsive-container.is-menu-open .pct-nav-search {
+	display: block !important;
+	width: 100%;
+	margin-top: var(--wp--preset--spacing--20);
+}
+.pct-nav-search form {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border: 2px solid currentColor;
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	overflow: hidden;
+}
+.pct-nav-search input[type="search"] {
+	flex: 1;
+	min-width: 0;
+	padding: 0.7em 1.1em;
+	border: 0;
+	background: transparent;
+	color: var(--wp--preset--color--contrast);
+	font: inherit;
+	font-size: var(--wp--preset--font-size--medium);
+}
+.pct-nav-search input[type="search"]:focus {
+	outline: none;
+}
+.pct-nav-search form:focus-within {
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--wp--preset--color--primary) 40%, transparent);
+}
+.pct-nav-search button {
+	display: grid;
+	place-items: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+.wp-block-navigation__responsive-container.is-menu-open .pct-nav-signup .wp-block-navigation-item__content {
+	padding: 0.6em 1.4em;
+	border-radius: 999px;
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-size: var(--wp--preset--font-size--large);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: var(--wp--preset--spacing--50);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+	gap: var(--wp--preset--spacing--30);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+	font-family: var(--wp--preset--font-family--heading);
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 700;
+	line-height: 1.2;
+}
+.wp-block-navigation__responsive-container-close {
+	width: 40px;
+	height: 40px;
+	display: grid;
+	place-items: center;
 }
 
 /* ==========================================================================
@@ -306,6 +489,10 @@ Tags: blog, entertainment, news, one-column, three-columns, wide-blocks, block-p
 	background-color: var(--wp--preset--color--contrast);
 	color: var(--wp--preset--color--base);
 }
+/* Core gives headings with a background a large padding (h2:where(.wp-block-heading).has-background) */
+.is-style-pct-line.has-background {
+	padding: 0.18em 0.32em;
+}
 .is-style-pct-line:not(.has-text-color) {
 	color: var(--wp--preset--color--base);
 }
@@ -365,29 +552,80 @@ Tags: blog, entertainment, news, one-column, three-columns, wide-blocks, block-p
 	background: var(--wp--custom--hero--button-hover-background, var(--wp--preset--color--accent));
 	color: var(--wp--custom--hero--button-hover-text, var(--wp--preset--color--base));
 }
-.pct-hero__media .wp-block-image,
-.pct-hero__media .wp-block-image img {
-	margin: 0;
-	width: 100%;
-	border-radius: 12px;
+/* The image column goes from the top to the bottom edge of the hero: the hero's vertical padding
+   (Styles → Dimensions) moves to the text column, the image column stretches to full height.
+   Images are never cropped (contain): they fill the height, or the width when they are wider than
+   the column, and sit on the bottom edge. */
+.pct-hero:has(> .wp-block-columns > .pct-hero__media) {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
-.pct-hero__media.is-slideshow {
+.pct-hero > .wp-block-columns:has(> .pct-hero__media) {
+	align-items: stretch !important;
+	margin-block: 0;
+}
+.pct-hero > .wp-block-columns:has(> .pct-hero__media) > .wp-block-column:not(.pct-hero__media) {
+	align-self: center;
+	padding-block: var(--wp--preset--spacing--50);
+}
+.pct-hero > .wp-block-columns > .pct-hero__media {
 	position: relative;
-	min-height: 420px;
+	align-self: stretch;
+	min-height: 360px;
 }
-.pct-hero__media.is-slideshow .wp-block-image {
+.pct-hero__media .wp-block-image {
 	position: absolute;
 	inset: 0;
+	margin: 0;
+}
+.pct-hero__media .wp-block-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border-radius: 0;
+	object-fit: contain;
+	object-position: center bottom;
+}
+.pct-hero__media.is-slideshow .wp-block-image {
 	opacity: 0;
 	transition: opacity 1.4s ease;
 }
 .pct-hero__media.is-slideshow .wp-block-image.is-active {
 	opacity: 1;
 }
-.pct-hero__media.is-slideshow .wp-block-image img {
-	height: 100%;
-	object-fit: cover;
-	object-position: center 15%;
+
+/* Small screens: the image goes behind the text, whole (never cropped), on the right and on the
+   bottom edge of the hero; the text stays on top
+   (the lines have their own background, the subtitle gets a halo in the background colour). */
+@media (max-width: 781px) {
+	.pct-hero > .wp-block-columns {
+		position: relative;
+		min-height: 20rem;
+	}
+	.pct-hero > .wp-block-columns > .wp-block-column:not(.pct-hero__media) {
+		position: relative;
+		z-index: 1;
+	}
+	.pct-hero > .wp-block-columns > .pct-hero__media {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 0;
+		width: 100%;
+		min-height: 0;
+		margin: 0;
+		opacity: 0.9;
+	}
+	.pct-hero__media .wp-block-image img {
+		object-position: right bottom;
+	}
+	.pct-hero__subtitle {
+		max-width: 75%;
+		/* a halo in the hero background colour: readable with light (Elena) or dark (Rosa, Morgana) text */
+		text-shadow: 0 0 2px var(--wp--preset--color--primary), 0 0 10px var(--wp--preset--color--primary), 0 0 18px var(--wp--preset--color--primary);
+	}
 }
 
 /* ==========================================================================

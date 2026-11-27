@@ -3,7 +3,7 @@
  * Title: Header sign-up button
  * Slug: podcast-core-studio/header-signup
  * Inserter: no
- * Description: "Subscribe to the podcast" button, shown only when an Email sign-up address is set in Settings → Podcast.
+ * Description: "Subscribe to the podcast" button, shown only when an Email sign-up address is set in Podcast → Settings → Podcast.
  *
  * @package PodcastCoreTheme
  */

@@ -1,17 +1,15 @@
-# Copyright (C) 2026 Rufusinfabula
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Podcast Core Studio 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/podcast-core-studio\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-11-25T19:34:05+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: it_IT\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: podcast-core-studio\n"
 
@@ -40,11 +38,11 @@ msgstr ""
 msgid "https://github.com/rufusinfabula"
 msgstr ""
 
-#: functions.php:52
+#: functions.php:53
 msgid "Podcast"
 msgstr "Podcast"
 
-#: functions.php:127
+#: functions.php:128
 msgid "Highlighted line"
 msgstr "Riga evidenziata"
 
@@ -130,6 +128,7 @@ msgid "One card per series with description, number of episodes and a link to it
 msgstr "Una scheda per serie con descrizione, numero di episodi e link all'archivio. Le schede vengono create dalle serie esistenti al momento dell'inserimento."
 
 #: patterns/cta-series-grid.php:30
+#: patterns/series-list.php:19
 msgid "Our series"
 msgstr "Le nostre serie"
 
@@ -164,11 +163,7 @@ msgctxt "Pattern title"
 msgid "Header sign-up button"
 msgstr "Pulsante di iscrizione nell'header"
 
-#: patterns/header-signup.php
-msgctxt "Pattern description"
-msgid "\"Subscribe to the podcast\" button, shown only when an Email sign-up address is set in Settings → Podcast."
-msgstr "Pulsante \"Iscriviti al podcast\", visibile solo se in Impostazioni → Podcast è impostato l'indirizzo Iscrizione via email."
-
+#: functions.php:197
 #: patterns/header-signup.php:19
 msgid "Subscribe to the podcast"
 msgstr "Iscriviti al podcast"
@@ -244,11 +239,6 @@ msgctxt "Pattern title"
 msgid "Email sign-up"
 msgstr "Iscrizione via email"
 
-#: patterns/newsletter.php
-msgctxt "Pattern description"
-msgid "A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Settings → Podcast."
-msgstr "Un riquadro che invita a ricevere i nuovi episodi via email. Il pulsante usa l'indirizzo Iscrizione via email di Impostazioni → Podcast."
-
 #: patterns/newsletter.php:19
 msgid "Get new episodes in your inbox"
 msgstr "I nuovi episodi nella tua casella di posta"
@@ -266,11 +256,6 @@ msgctxt "Pattern title"
 msgid "Listen on"
 msgstr "Ascolta su"
 
-#: patterns/platform-links.php
-msgctxt "Pattern description"
-msgid "Buttons to the platforms set in Settings → Podcast (Podcast Core Engine)."
-msgstr "Pulsanti verso le piattaforme impostate in Impostazioni → Podcast (Podcast Core Engine)."
-
 #: patterns/post-navigation.php
 msgctxt "Pattern title"
 msgid "Previous / next links"
@@ -281,6 +266,7 @@ msgctxt "Pattern title"
 msgid "Search overlay"
 msgstr "Finestra di ricerca"
 
+#: functions.php:203
 #: patterns/search-overlay.php:12
 #: patterns/search-overlay.php:18
 #: patterns/search-toggle.php:12
@@ -296,6 +282,7 @@ msgstr "Chiudi ricerca"
 msgid "Search for:"
 msgstr "Cerca:"
 
+#: functions.php:204
 #: patterns/search-overlay.php:17
 msgid "Search episodes, news, pages…"
 msgstr "Cerca episodi, news, pagine…"
@@ -353,6 +340,7 @@ msgstr "Contenuto archivio episodi"
 
 #: patterns/template-archive-episodes.php:37
 #: patterns/template-archive.php:34
+#: patterns/template-author.php:52
 #: patterns/template-home.php:36
 msgid "Nothing found here yet."
 msgstr "Ancora nessun contenuto qui."
@@ -391,7 +379,7 @@ msgctxt "Pattern title"
 msgid "Post content"
 msgstr "Contenuto articolo"
 
-#: patterns/template-single.php:20
+#: patterns/template-single.php:21
 msgid "Tags:"
 msgstr "Tag:"
 
@@ -674,5 +662,55 @@ msgctxt "Style variation name"
 msgid "Viola"
 msgstr "Viola"
 
+#: patterns/template-author.php:25
 msgid "Articles"
 msgstr "Articoli"
+
+#: patterns/partners.php:19
+msgid "Our partners"
+msgstr "I nostri partner"
+
+#: patterns/partners.php
+msgctxt "Pattern title"
+msgid "Partners"
+msgstr "Partner"
+
+#: patterns/partners.php
+msgctxt "Pattern description"
+msgid "Logos, names and short texts of partners, sponsors or friends (Podcast → Partners), with an editable title."
+msgstr "Loghi, nomi e brevi testi di partner, sponsor o amici (Podcast → Partner), con un titolo modificabile."
+
+#: patterns/series-list.php
+msgctxt "Pattern title"
+msgid "Series list"
+msgstr "Elenco serie"
+
+#: patterns/template-author.php
+msgctxt "Pattern title"
+msgid "Author content"
+msgstr "Contenuto autore"
+
+#: patterns/template-author.php
+msgctxt "Pattern description"
+msgid "Author page: profile picture, name and biography (Users → Profile), then the author's posts as a compact list."
+msgstr "Pagina autore: foto profilo, nome e biografia (Utenti → Profilo), poi gli articoli dell’autore in un elenco compatto."
+
+#: patterns/series-list.php
+msgctxt "Pattern description"
+msgid "The podcast's series, or the sub-series of one series (block settings → Series to show), with icon and number of episodes, under an editable title."
+msgstr "Le serie del podcast, o le sottoserie di una serie (impostazioni del blocco → Serie da mostrare), con icona e numero di episodi, sotto un titolo modificabile."
+
+#: patterns/header-signup.php
+msgctxt "Pattern description"
+msgid "\"Subscribe to the podcast\" button, shown only when an Email sign-up address is set in Podcast → Settings → Podcast."
+msgstr "Pulsante \"Iscriviti al podcast\", mostrato solo se è impostato un indirizzo di iscrizione via email in Podcast → Settings → Podcast."
+
+#: patterns/newsletter.php
+msgctxt "Pattern description"
+msgid "A banner inviting listeners to get new episodes by email. The button uses the Email sign-up address in Podcast → Settings → Podcast."
+msgstr "Un banner che invita gli ascoltatori a ricevere i nuovi episodi via email. Il pulsante usa l’indirizzo di iscrizione via email di Podcast → Settings → Podcast."
+
+#: patterns/platform-links.php
+msgctxt "Pattern description"
+msgid "Buttons to the platforms set in Podcast → Settings → Podcast."
+msgstr "Pulsanti verso le piattaforme impostate in Podcast → Settings → Podcast."
